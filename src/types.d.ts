@@ -1,12 +1,33 @@
 interface Colors {
     // requiered colors
-    main: String,
-    mainText: String,
-    secondaryText: String
+    main: string,
+    mainText: string,
+    secondaryText: string
     // unrequiered 
-    background?: String,
-    activeBtn?: String,
-    clickBtn?: String,
-    disabledBtn?: String,
-    titleText?: String,
+    background?: string,
+    navBgcol: string,
+    activeBtn?: string,
+    clickBtn?: string,
+    disabledBtn?: string,
+    titleText?: string,
+}
+
+interface Fonts {
+    fontFamilly: String,
+    fontSize: String,
+    fontWeight: String
+}
+
+interface Theme {
+    fonts?: {
+        title: Fonts,
+        primary: Fonts,
+        secondary: Fonts
+    },
+    colors?: Colors
+}
+
+type Nav = {
+    items: String[],
+    theme: Theme
 }
