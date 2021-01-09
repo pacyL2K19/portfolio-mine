@@ -10,3 +10,18 @@ interface Colors {
     disabledBtn?: String,
     titleText?: String,
 }
+
+interface Fonts {
+    fontFamilly: String,
+    fontSize: String,
+    fontWeight: String
+}
+
+interface Theme {
+    fonts?: {
+        title: Fonts,
+        primary: Fonts,
+        secondary: Fonts
+    },
+    colors?: Colors
+}
