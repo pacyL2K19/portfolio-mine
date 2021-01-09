@@ -1,2 +1,1 @@
-# portfolio-mine
-My portfolio website built in react 
+# Portfolio built in REACT and Typscript
