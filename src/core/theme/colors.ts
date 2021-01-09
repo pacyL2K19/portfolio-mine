@@ -7,4 +7,5 @@ export const colors: Colors = {
     clickBtn: "#F4F1F0",
     disabledBtn: "String",
     titleText: "#F55800",
+    navBgcol: "#3E3C3C"
 }

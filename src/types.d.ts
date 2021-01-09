@@ -5,6 +5,7 @@ interface Colors {
     secondaryText: String
     // unrequiered 
     background?: String,
+    navBgcol: String,
     activeBtn?: String,
     clickBtn?: String,
     disabledBtn?: String,
@@ -24,4 +25,9 @@ interface Theme {
         secondary: Fonts
     },
     colors?: Colors
+}
+
+type Nav = {
+    items: String[],
+    theme: Theme
 }
