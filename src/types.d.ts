@@ -22,6 +22,7 @@ interface Theme {
     fonts?: {
         title: Fonts,
         primary: Fonts,
+        subtitle: Fonts,
         secondary: Fonts
     },
     colors?: Colors
@@ -29,5 +30,5 @@ interface Theme {
 
 type Nav = {
     items: String[],
-    theme: Theme
+    // theme: Theme
 }

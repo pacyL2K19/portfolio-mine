@@ -1,7 +1,13 @@
 export const titleFonts: Fonts = {
-    fontFamilly: "String",
-    fontSize: "String",
-    fontWeight: "String"
+    fontFamilly: "Arial, Helvetica, sans-serif",
+    fontSize: "20px",
+    fontWeight: "bold"
+};
+
+export const subTitleFonts: Fonts = {
+    fontFamilly: "Arial, Helvetica, sans-serif",
+    fontSize: "20px",
+    fontWeight: "normal"
 };
 
 export const primaryFonts: Fonts = {
