@@ -6,7 +6,7 @@ interface Props {
 }
 const Header: React.FC<Props> = () => {
     return (
-        <div style={{backgroundColor: colors.background, height: 900}}>
+        <div style={{backgroundColor: colors.background}}>
             <Menu navs={['Home', 'About', 'Contacts']} />
         </div>
     )

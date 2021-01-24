@@ -33,3 +33,9 @@ type Nav = {
     items: String[],
     // theme: Theme
 }
+
+type Header = {
+    main: string,
+    title: string,
+    intro: string
+}
