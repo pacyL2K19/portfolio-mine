@@ -2,11 +2,11 @@ import styled from 'styled-components';
 // import { theme } from '../../core/theme';
 
 export const Box = styled.div`
-    height: 72px;
+    height: 60px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 `
 

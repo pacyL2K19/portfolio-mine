@@ -10,6 +10,7 @@ interface Colors {
     clickBtn?: string,
     disabledBtn?: string,
     titleText?: string,
+    menuLinks?: string
 }
 
 interface Fonts {
