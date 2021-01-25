@@ -1,8 +1,12 @@
 import React from 'react';
 import { Grid } from '@material-ui/core'
 
+interface Props {
 
-const Header = (props: Header) => {
+}
+
+
+const Home : React.FC<Home> = (props: Home) => {
     return (
         <>
             <Grid
@@ -16,7 +20,7 @@ const Header = (props: Header) => {
                     xs = {12}
                 >
                     <Grid container>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
+                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><i style = {{color: 'white'}} className="fab fa-github"></i></Grid>
                         <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
                         <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
                         <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
@@ -44,3 +48,5 @@ const Header = (props: Header) => {
         </>
     )
 }
+
+export default Home

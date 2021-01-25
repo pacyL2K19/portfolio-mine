@@ -34,7 +34,7 @@ type Nav = {
     // theme: Theme
 }
 
-type Header = {
+type Home = {
     main: string,
     title: string,
     intro: string
