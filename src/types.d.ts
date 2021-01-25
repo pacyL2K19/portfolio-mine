@@ -10,6 +10,7 @@ interface Colors {
     clickBtn?: string,
     disabledBtn?: string,
     titleText?: string,
+    menuLinks?: string
 }
 
 interface Fonts {
@@ -31,4 +32,10 @@ interface Theme {
 type Nav = {
     items: String[],
     // theme: Theme
+}
+
+type Home = {
+    main: string,
+    title: string,
+    intro: string
 }
