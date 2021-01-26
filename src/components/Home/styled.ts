@@ -1,1 +1,10 @@
 import styled from 'styled-components';
+
+export const Box = styled.section`
+    padding: 170px 3%;
+`
+
+export const Icon = styled.i`
+    color: white;
+    margin: 15px auto;
+`

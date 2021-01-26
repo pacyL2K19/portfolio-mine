@@ -1,14 +1,15 @@
 import React from 'react';
-import { Grid } from '@material-ui/core'
+import { Grid } from '@material-ui/core';
+import { Box, Icon } from './styled';
+import data from '../../helper/header.json';
 
 interface Props {
 
 }
 
-
 const Home : React.FC<Home> = (props: Home) => {
     return (
-        <>
+        <Box>
             <Grid
                 container
             >
@@ -20,10 +21,13 @@ const Home : React.FC<Home> = (props: Home) => {
                     xs = {12}
                 >
                     <Grid container>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><i style = {{color: 'white'}} className="fab fa-github"></i></Grid>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
+                        {
+                            data.icons.map(i => <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><Icon className={i.class}></Icon></Grid>)
+                        }
+                        {/* <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><i style = {{color: 'white', margin: "10px auto"}} className="fab fa-github"></i></Grid>
+                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><i style = {{color: 'white', margin: "10px auto"}} className="fab fa-linkedin-in"></i></Grid>
+                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><i style = {{color: 'white', margin: "10px auto"}} className="fab fa-twitter"></i></Grid>
+                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><i style = {{color: 'white', margin: "10px auto"}} className="fab fa-stack-overflow"></i></Grid> */}
                     </Grid>
                 </Grid>
                 <Grid
@@ -45,7 +49,7 @@ const Home : React.FC<Home> = (props: Home) => {
                     
                 </Grid>
             </Grid>
-        </>
+        </Box>
     )
 }
 

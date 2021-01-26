@@ -1,5 +1,13 @@
 {
-    "main": "Hey There. <br /> I am Pacifique",
-    "title": "I am a Fullstack Software Engineer",
-    "intro": "I have ability of building frontend applications and backend applications with the most excited technologies. I can help you or your company building software solutions, don't hesitate to contact me"
+    "texts": {
+        "main": "Hey There. <br /> I am Pacifique",
+        "title": "I am a Fullstack Software Engineer",
+        "intro": "I have ability of building frontend applications and backend applications with the most excited technologies. I can help you or your company building software solutions, don't hesitate to contact me"
+    },
+    "icons": [
+        {"key": "0", "for": "Github", "class": "fab fa-github"},
+        {"key": "1", "for": "LinkedIn", "class": "fab fa-linkedin-in"},
+        {"key": "2", "for": "Twitter", "class": "fab fa-twitter"},
+        {"key": "3", "for": "Stack Overflow", "class": "fab fa-stack-overflow"}
+    ]
 }
