@@ -12,5 +12,6 @@ export const Icon = styled.i`
 export const Text = styled.h2<Texts>`
     color: ${props => props.color};
     font-size: ${props => props.fontSize};
-    font-family: ${props => props.fontFamilly} 
+    font-family: ${props => props.fontFamilly};
+    margin-bottom: 20px;
 `
