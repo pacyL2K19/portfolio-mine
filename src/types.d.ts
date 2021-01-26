@@ -14,9 +14,9 @@ interface Colors {
 }
 
 interface Fonts {
-    fontFamilly: String,
-    fontSize: String,
-    fontWeight: String
+    fontFamilly: string,
+    fontSize: string,
+    fontWeight: string
 }
 
 interface Theme {
@@ -38,4 +38,10 @@ type Home = {
     main: string,
     title: string,
     intro: string
+}
+
+type Texts = {
+    color: string | undefined,
+    fontSize: string | undefined,
+    fontFamilly: string | undefined
 }

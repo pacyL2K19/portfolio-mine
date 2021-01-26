@@ -8,3 +8,9 @@ export const Icon = styled.i`
     color: white;
     margin: 15px auto;
 `
+
+export const Text = styled.h2<Texts>`
+    color: ${props => props.color};
+    font-size: ${props => props.fontSize};
+    font-family: ${props => props.fontFamilly} 
+`
