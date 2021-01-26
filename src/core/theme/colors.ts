@@ -1,6 +1,6 @@
 export const colors: Colors = {
     main: "#262626",
-    mainText: "#FFFFFF",
+    mainText: "#ebe0df",
     secondaryText: "String",
     background: "#1C1A19",
     activeBtn: "String",

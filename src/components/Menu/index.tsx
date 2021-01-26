@@ -31,10 +31,9 @@ const Menu: React.FC<Props> = (props: Props) => {
                         </Nav>
                         {
                             props.navs.map(item => (
-                                <Nav.Link style = {{color : theme.colors?.menuLinks }} href = {"#"+item}>{item}</Nav.Link>
+                                <Nav.Link style = {{color : theme.colors?.menuLinks }} href = {"#"+item.toLowerCase()}>{item}</Nav.Link>
                             ))
                         }
-                        <Nav.Link><FontAwesomeIcon style = {{color: 'white', marginLeft: 50, marginRight: 50}} icon={faMailBulk} /></Nav.Link>
                     </Navbar.Collapse>
                 </Navbar>
             {/* </Box> */}

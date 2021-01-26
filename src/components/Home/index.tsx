@@ -1,14 +1,12 @@
 import React from 'react';
-import { Grid } from '@material-ui/core'
-
-interface Props {
-
-}
-
+import { Grid } from '@material-ui/core';
+import { Box, Icon, Text } from './styled';
+import data from '../../helper/header.json';
+import { theme } from '../../core/theme';
 
 const Home : React.FC<Home> = (props: Home) => {
     return (
-        <>
+        <Box>
             <Grid
                 container
             >
@@ -20,10 +18,9 @@ const Home : React.FC<Home> = (props: Home) => {
                     xs = {12}
                 >
                     <Grid container>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><i style = {{color: 'white'}} className="fab fa-github"></i></Grid>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
-                        <Grid item xs = {3} md = {3} lg = {12} xl = {12} ></Grid>
+                        {
+                            data.icons.map(i => <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><Icon className={i.class}></Icon></Grid>)
+                        }
                     </Grid>
                 </Grid>
                 <Grid
@@ -33,7 +30,9 @@ const Home : React.FC<Home> = (props: Home) => {
                     lg = {6}
                     xs = {12}
                 >
-                    
+                    <Text color={theme.colors?.titleText} fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>{props.main}</Text>
+                    <Text color={theme.colors?.mainText} fontSize={theme.fonts?.secondary.fontSize} fontFamilly={theme.fonts?.secondary.fontFamilly}>{props.title}</Text>
+                    <Text color={theme.colors?.mainText} fontSize={theme.fonts?.primary.fontSize} fontFamilly={theme.fonts?.primary.fontFamilly}>{props.intro}</Text>                    
                 </Grid>
                 <Grid
                     item 
@@ -45,7 +44,7 @@ const Home : React.FC<Home> = (props: Home) => {
                     
                 </Grid>
             </Grid>
-        </>
+        </Box>
     )
 }
 
