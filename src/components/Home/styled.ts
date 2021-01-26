@@ -15,3 +15,7 @@ export const Text = styled.h2<Texts>`
     font-family: ${props => props.fontFamilly};
     margin-bottom: 20px;
 `
+
+export const Img = styled.div`
+    background-image: url()
+`
