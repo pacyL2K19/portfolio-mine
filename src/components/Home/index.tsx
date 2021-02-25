@@ -33,13 +33,28 @@ const Home : React.FC<Home> = (props: Home) => {
                 >
                     <Text
                         data-aos="fade-down"
-                        data-aos-duration="1000"
+                        data-aos-duration="700"
+                        data-aos-anchor-placement="center-bottom"
                         color={theme.colors?.titleText}
                         fontSize={theme.fonts?.title.fontSize}
                         fontFamilly={theme.fonts?.title.fontFamilly}
                     >{props.main}</Text>
-                    <Text data-aos="fade-left" data-aos-duration="1250" color={theme.colors?.mainText} fontSize={theme.fonts?.secondary.fontSize} fontFamilly={theme.fonts?.secondary.fontFamilly}>{props.title}</Text>
-                    <Text data-aos="fade-left" data-aos-duration="1500" color={theme.colors?.mainText} fontSize={theme.fonts?.primary.fontSize} fontFamilly={theme.fonts?.primary.fontFamilly}>{props.intro}</Text>                    
+                    <Text
+                        data-aos="fade-left" 
+                        data-aos-duration="850"
+                        data-aos-anchor-placement="center-bottom"
+                        color={theme.colors?.mainText}
+                        fontSize={theme.fonts?.secondary.fontSize}
+                        fontFamilly={theme.fonts?.secondary.fontFamilly}
+                    >{props.title}</Text>
+                    <Text
+                        data-aos="fade-right"
+                        data-aos-duration="1100"
+                        data-aos-anchor-placement="center-bottom"
+                        color={theme.colors?.mainText}
+                        fontSize={theme.fonts?.primary.fontSize}
+                        fontFamilly={theme.fonts?.primary.fontFamilly}
+                    >{props.intro}</Text>                    
                 </Grid>
                 <Grid
                     item 
@@ -55,7 +70,7 @@ const Home : React.FC<Home> = (props: Home) => {
                 >
                     <Profile
                         data-aos="zoom-in-up"
-                        data-aos-duration="1000"
+                        data-aos-duration="1100"
                         data-aos-anchor-placement="center-bottom"
                     >
                         <img
