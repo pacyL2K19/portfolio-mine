@@ -31,9 +31,15 @@ const Home : React.FC<Home> = (props: Home) => {
                     lg = {6}
                     xs = {12}
                 >
-                    <Text color={theme.colors?.titleText} fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>{props.main}</Text>
-                    <Text color={theme.colors?.mainText} fontSize={theme.fonts?.secondary.fontSize} fontFamilly={theme.fonts?.secondary.fontFamilly}>{props.title}</Text>
-                    <Text color={theme.colors?.mainText} fontSize={theme.fonts?.primary.fontSize} fontFamilly={theme.fonts?.primary.fontFamilly}>{props.intro}</Text>                    
+                    <Text
+                        data-aos="fade-down"
+                        data-aos-duration="1000"
+                        color={theme.colors?.titleText}
+                        fontSize={theme.fonts?.title.fontSize}
+                        fontFamilly={theme.fonts?.title.fontFamilly}
+                    >{props.main}</Text>
+                    <Text data-aos="fade-left" data-aos-duration="1250" color={theme.colors?.mainText} fontSize={theme.fonts?.secondary.fontSize} fontFamilly={theme.fonts?.secondary.fontFamilly}>{props.title}</Text>
+                    <Text data-aos="fade-left" data-aos-duration="1500" color={theme.colors?.mainText} fontSize={theme.fonts?.primary.fontSize} fontFamilly={theme.fonts?.primary.fontFamilly}>{props.intro}</Text>                    
                 </Grid>
                 <Grid
                     item 
@@ -47,7 +53,11 @@ const Home : React.FC<Home> = (props: Home) => {
                         alignItems: 'center'
                     }}
                 >
-                    <Profile>
+                    <Profile
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1000"
+                        data-aos-anchor-placement="center-bottom"
+                    >
                         <img
                             src={profile}
                             alt=" Pacifique Linjanja "
