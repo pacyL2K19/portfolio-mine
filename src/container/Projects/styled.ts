@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-const Box = styled.section`
-    
+export const Box = styled.section`
+    padding: 80px 2%;
 `
