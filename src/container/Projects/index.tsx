@@ -5,7 +5,7 @@ interface Props {
 const Projects: React.FC<Props> = () => {
     return (
         <>
-        
+            
         </>
     )
 }
