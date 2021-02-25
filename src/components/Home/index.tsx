@@ -1,8 +1,9 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import { Box, Icon, Text } from './styled';
+import { Box, Icon, Profile, Text } from './styled';
 import data from '../../helper/header.json';
 import { theme } from '../../core/theme';
+import profile from '../../assets/profile.jpg'
 
 const Home : React.FC<Home> = (props: Home) => {
     return (
@@ -30,9 +31,30 @@ const Home : React.FC<Home> = (props: Home) => {
                     lg = {6}
                     xs = {12}
                 >
-                    <Text color={theme.colors?.titleText} fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>{props.main}</Text>
-                    <Text color={theme.colors?.mainText} fontSize={theme.fonts?.secondary.fontSize} fontFamilly={theme.fonts?.secondary.fontFamilly}>{props.title}</Text>
-                    <Text color={theme.colors?.mainText} fontSize={theme.fonts?.primary.fontSize} fontFamilly={theme.fonts?.primary.fontFamilly}>{props.intro}</Text>                    
+                    <Text
+                        data-aos="fade-down"
+                        data-aos-duration="700"
+                        data-aos-anchor-placement="center-bottom"
+                        color={theme.colors?.titleText}
+                        fontSize={theme.fonts?.title.fontSize}
+                        fontFamilly={theme.fonts?.title.fontFamilly}
+                    >{props.main}</Text>
+                    <Text
+                        data-aos="fade-left" 
+                        data-aos-duration="850"
+                        data-aos-anchor-placement="center-bottom"
+                        color={theme.colors?.mainText}
+                        fontSize={theme.fonts?.secondary.fontSize}
+                        fontFamilly={theme.fonts?.secondary.fontFamilly}
+                    >{props.title}</Text>
+                    <Text
+                        data-aos="fade-right"
+                        data-aos-duration="1100"
+                        data-aos-anchor-placement="center-bottom"
+                        color={theme.colors?.mainText}
+                        fontSize={theme.fonts?.primary.fontSize}
+                        fontFamilly={theme.fonts?.primary.fontFamilly}
+                    >{props.intro}</Text>                    
                 </Grid>
                 <Grid
                     item 
@@ -40,8 +62,23 @@ const Home : React.FC<Home> = (props: Home) => {
                     md = {12}
                     lg = {5}
                     xs = {12}
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}
                 >
-                    
+                    <Profile
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1100"
+                        data-aos-anchor-placement="center-bottom"
+                    >
+                        <img
+                            src={profile}
+                            alt=" Pacifique Linjanja "
+                            style={{height: 250, width: 250, borderRadius: 125}}
+                        />
+                    </Profile>
                 </Grid>
             </Grid>
         </Box>

@@ -8,7 +8,7 @@ interface Props {
 }
 const Header: React.FC<Props> = () => {
     return (
-        <div style={{backgroundColor: theme.colors?.background}}>
+        <div style={{backgroundImage: 'linear-gradient(to right, '+theme.colors?.background+' , #4f4d4c)'}}>
             <Menu navs={['Home', 'About', 'Contacts']} />
             <Home main = {home.texts.main} title = {home.texts.title} intro = {home.texts.intro} />
         </div>

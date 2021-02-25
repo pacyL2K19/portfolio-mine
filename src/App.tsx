@@ -1,8 +1,12 @@
 import React from 'react';
 import Header from './container/Header';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "aos/dist/aos";
 
 class App extends React.Component {
   componentWillMount () {
+    AOS.init();
     document.body.style.margin = "0px";
   }
   render () {
