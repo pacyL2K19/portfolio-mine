@@ -9,6 +9,13 @@ export const Icon = styled.i`
     margin: 15px auto;
 `
 
+export const Profile = styled.div`
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    box-shadow: 0 0 25px white;
+`
+
 export const Text = styled.h2<Texts>`
     color: ${props => props.color};
     font-size: ${props => props.fontSize};
