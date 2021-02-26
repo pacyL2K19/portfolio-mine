@@ -1548,7 +1548,7 @@
     "schema-utils" "^2.6.5"
     "source-map" "^0.7.3"
 
-"@popperjs/core@^2.5.3":
+"@popperjs/core@^2.5.3", "@popperjs/core@^2.6.0":
   "integrity" "sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw=="
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.6.0.tgz"
   "version" "2.6.0"
@@ -1810,6 +1810,14 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/bootstrap@^5.0.7":
+  "integrity" "sha512-iHaFhYvfwUN48fYpJtguDx+tHyc4Qh20SjsWWoB9QZZpMUSWjtrOWeTpM+LTmt2fmTaa+DAP6DIbjs7nuhWFbg=="
+  "resolved" "https://registry.npmjs.org/@types/bootstrap/-/bootstrap-5.0.7.tgz"
+  "version" "5.0.7"
+  dependencies:
+    "@popperjs/core" "^2.6.0"
+    "@types/jquery" "*"
+
 "@types/classnames@^2.2.10":
   "integrity" "sha512-2koNhpWm3DgWRp5tpkiJ8JGc1xTn2q0l+jUNUE7oMKXUf5NpI9AIdC4kbjGNFBdHtcxBD18LAksoudAVhFKCjw=="
   "resolved" "https://registry.npmjs.org/@types/classnames/-/classnames-2.2.11.tgz"
@@ -1901,6 +1909,13 @@
     "jest-diff" "^26.0.0"
     "pretty-format" "^26.0.0"
 
+"@types/jquery@*":
+  "integrity" "sha512-6RXU9Xzpc6vxNrS6FPPapN1SxSHgQ336WC6Jj/N8q30OiaBZ00l1GBgeP7usjVZPivSkGUfL1z/WW6TX989M+w=="
+  "resolved" "https://registry.npmjs.org/@types/jquery/-/jquery-3.5.5.tgz"
+  "version" "3.5.5"
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@*", "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   "integrity" "sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw=="
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.6.tgz"
@@ -1951,6 +1966,13 @@
   "resolved" "https://registry.npmjs.org/@types/q/-/q-1.5.4.tgz"
   "version" "1.5.4"
 
+"@types/react-bootstrap@^0.32.25":
+  "integrity" "sha512-VTa6viz5L+uPblEiF2pZz/n425cC49hrjLTsiLySxf7fw+UkchkjpskrsOHRvC6cCgCAG9futRWvOOjD1IBQqQ=="
+  "resolved" "https://registry.npmjs.org/@types/react-bootstrap/-/react-bootstrap-0.32.25.tgz"
+  "version" "0.32.25"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^16.9.8":
   "integrity" "sha512-ItatOrnXDMAYpv6G8UCk2VhbYVTjZT9aorLtA/OzDN9XJ2GKcfam68jutoAcILdRjsRUO8qb7AmyObF77Q8QFw=="
   "resolved" "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.10.tgz"
@@ -1987,6 +2009,11 @@
   "version" "0.0.8"
   dependencies:
     "@types/node" "*"
+
+"@types/sizzle@*":
+  "integrity" "sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg=="
+  "resolved" "https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.2.tgz"
+  "version" "2.3.2"
 
 "@types/source-list-map@*":
   "integrity" "sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA=="
@@ -9497,10 +9524,10 @@
     "regenerator-runtime" "^0.13.7"
     "whatwg-fetch" "^3.4.1"
 
-"react-bootstrap@^1.4.3":
-  "integrity" "sha512-4tYhk26KRnK0myMEp2wvNjOvnHMwWfa6pWFIiCtj9wewYaTxP7TrCf7MwcIMBgUzyX0SJXx6UbbDG0+hObiXNg=="
-  "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-1.4.3.tgz"
-  "version" "1.4.3"
+"react-bootstrap@^1.5.0":
+  "integrity" "sha512-t1o4kP3coj2HIaBepJxGAc7HZ1fWGria/s0Yr9JUmNkCilyrnXtK209qn28vuZ4muhnA0uR0GMMXAMrLsLyiIw=="
+  "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-1.5.0.tgz"
+  "version" "1.5.0"
   dependencies:
     "@babel/runtime" "^7.4.2"
     "@restart/context" "^2.1.4"
@@ -9516,7 +9543,7 @@
     "invariant" "^2.2.4"
     "prop-types" "^15.7.2"
     "prop-types-extra" "^1.1.0"
-    "react-overlays" "^4.1.0"
+    "react-overlays" "^4.1.1"
     "react-transition-group" "^4.4.1"
     "uncontrollable" "^7.0.0"
     "warning" "^4.0.3"
@@ -9580,7 +9607,7 @@
   "resolved" "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   "version" "3.0.4"
 
-"react-overlays@^4.1.0":
+"react-overlays@^4.1.1":
   "integrity" "sha512-WtJifh081e6M24KnvTQoNjQEpz7HoLxqt8TwZM7LOYIkYJ8i/Ly1Xi7RVte87ZVnmqQ4PFaFiNHZhSINPSpdBQ=="
   "resolved" "https://registry.npmjs.org/react-overlays/-/react-overlays-4.1.1.tgz"
   "version" "4.1.1"
