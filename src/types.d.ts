@@ -1,9 +1,19 @@
 interface Colors {
-    // requiered colors
+
+    /**
+     * @constant Colors 
+     * required
+     */
+
     main: string,
     mainText: string,
     secondaryText: string
-    // unrequiered 
+
+    /**
+     * @constant Colors 
+     * unrequired
+     */
+
     background?: string,
     navBgcol: string,
     activeBtn?: string,
