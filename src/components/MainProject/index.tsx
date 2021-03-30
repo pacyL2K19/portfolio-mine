@@ -1,6 +1,7 @@
 import React from 'react';
 import projects from '../../helper/projects.json';
 import { Row, Container, Col, Image } from "react-bootstrap";
+import Skills from "./Skills";
 interface Props {
 
 }
@@ -38,7 +39,7 @@ const MainProject: React.FC<Props> = () => {
                                 <p style={{fontSize: 22}}>{ projects.projects[0].description }</p>
                             </Col>
                             <Col lg={'12'}>
-                                
+                                <Skills SkillsItems={projects.projects[0].techs} />
                             </Col>
                             <Col lg={'12'}>
 
