@@ -9,11 +9,12 @@ const MainProject: React.FC<Props> = () => {
     return (
         <>
             <Container fluid>
-                <Row >
-                    <Col 
+                <Row style={{justifyContent: 'space-around'}}>
+                    <Col
+                        lg={7}
                         style=
                             {{
-                                height: 450,
+                                height: 500,
                                 backgroundColor: "#c78c20",
                                 borderRadius: 10,
                                 display: "flex",
@@ -27,13 +28,14 @@ const MainProject: React.FC<Props> = () => {
                             fluid
                         />
                     </Col>
-                    <Col>
+                    <Col lg={4}>
                         <Row>
                             <Col lg={'12'}>
-                                <p className="h2">{ projects.projects[0].title }</p>
+                                <p className="h1">{ projects.projects[0].title }</p>
+                                <div style={{height: 1, margin: "50px 0", backgroundColor: "black", width: "100%"}}></div>
                             </Col>
                             <Col lg={'12'}>
-                                <p style={{fontSize: 18}}>{ projects.projects[0].description }</p>
+                                <p style={{fontSize: 22}}>{ projects.projects[0].description }</p>
                             </Col>
                             <Col lg={'12'}>
                                 
