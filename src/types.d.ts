@@ -55,3 +55,8 @@ type Texts = {
     fontSize: string | undefined,
     fontFamilly: string | undefined
 }
+
+type Buttons = {
+    // backgroundColor: string | undefined
+    title: string | undefined
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import projects from '../../helper/projects.json';
 import { Row, Container, Col, Image } from "react-bootstrap";
 import Skills from "./Skills";
+import Button from "../../components/Button";
 interface Props {
 
 }
@@ -41,8 +42,8 @@ const MainProject: React.FC<Props> = () => {
                             <Col lg={'12'}>
                                 <Skills SkillsItems={projects.projects[0].techs} />
                             </Col>
-                            <Col lg={'12'}>
-
+                            <Col lg={'5'}>
+                                <Button title = "See Project" />
                             </Col>
                         </Row>
                     </Col>
