@@ -8,7 +8,8 @@ export const ProjectTitleSection = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    margin-bottom: 80px
 `
 
 export const LineSeparator = styled.div`
