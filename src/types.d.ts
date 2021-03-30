@@ -40,7 +40,7 @@ interface Theme {
 }
 
 type Nav = {
-    items: String[],
+    items: string[],
     // theme: Theme
 }
 
