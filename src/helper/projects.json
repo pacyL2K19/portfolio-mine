@@ -18,9 +18,31 @@
             "description": "MagoEat is an online restaurant that allows users to order from their prefered restaurants, built in React Native, It has Android and iOS versions in French",
             "live_link": "#",
             "github_link": "https://github.com/pacyL2K19/magoEatProd",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1614292731/dahliaPr_emraom.png",
+            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1609359968/Italian_food_n4zsrw.jpg",
             "techs": [
                 "Javascript", "React N", "Joi", "JSX"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "MagoEat Backend",
+            "description": "THis is the backend project built with ExpressJs, Mongodb and Mongoose as the ORM. This app makes the frontend Mobile App dynamic and connects it to the datanase",
+            "live_link": "#",
+            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617231055/successGetListEnquete_qc06xm.png",
+            "github_link": "https://github.com/pacyL2K19/magoEat-BackendV1",
+            "techs": [
+                "Javascript", "NodeJs", "ExpressJs", "MongoDB", "Joi validation"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Horizon Travel Plus",
+            "description": "Horizon Travel Plus is a travel agency, this web site is built in PHP and allows users to contact the compony and reserve places in holtels, air planes, ... for different reasons",
+            "live_link": "www.horizontravelplus.com",
+            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1614292731/dahliaPr_emraom.png",
+            "github_link": "https://github.com/pacyL2K19/horizontravelplus",
+            "techs": [
+                "HTML5", "CSS3", "PHP"
             ]
         },
         {
