@@ -1,17 +1,17 @@
 import React from 'react';
 
 interface Props {
-    imageUrl: string
+    project: Project
 }
 const Project: React.FC<Props> = (props: Props) => {
     return (
         <>
             <div
                 style={{
-                    background: "url("+require(props.imageUrl)+")",
+                    backgroundImage : 'url('+props.project.imgUrl+')',
                     backgroundRepeat:"no-repeat",
                     backgroundSize: "cover",
-                    height: "100%",
+                    height: 500,
                     width: "100%",
                     backgroundPosition: "center"
                 }}

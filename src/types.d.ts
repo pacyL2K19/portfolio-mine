@@ -60,3 +60,7 @@ type Buttons = {
     // backgroundColor: string | undefined
     title: string | undefined
 }
+
+type Project = {
+    imgUrl: string
+}
