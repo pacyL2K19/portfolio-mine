@@ -24,7 +24,7 @@ const MainProject: React.FC<Props> = () => {
                                 justifyContent: "center",
                                 padding: "auto 200px"
                             }}
-                        data-aos="fade-left"
+                        data-aos="fade-right"
                         data-aos-duration="700"
                         data-aos-anchor-placement="center-bottom"
                     >
@@ -34,7 +34,7 @@ const MainProject: React.FC<Props> = () => {
                         />
                     </Col>
                     <Col
-                        data-aos="fade-right"
+                        data-aos="fade-left"
                         data-aos-duration="700"
                         data-aos-anchor-placement="center-bottom"
                         lg={4}
