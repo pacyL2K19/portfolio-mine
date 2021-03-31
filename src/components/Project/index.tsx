@@ -25,7 +25,6 @@ const Project: React.FC<Props> = (props: Props) => {
                         bottom: 15,
                         left: 20,
                         right: 20,
-                        // backgroundColor: theme.colors?.main,
                         backgroundImage: 'linear-gradient(to top, '+theme.colors?.background+' , rgba(250, 250, 250, 0.5))',
                         zIndex: 100,
                     }}
@@ -41,18 +40,18 @@ const Project: React.FC<Props> = (props: Props) => {
                         }}>{props.project.title}
                     </h3>
                     <p style={{color: "white", fontSize: 18, marginTop: 120, padding: 30}}>{props.project.description}</p>
-                    <Container>
+                    <Container style={{ position: "absolute", bottom: 20 }}>
                         <Row>
                             {
-                                props.project.techs?.splice(0, 3).map(skill => (
+                                props.project.techs?.slice(0, 3).map(skill => (
                                     <Col lg={"4"}>
                                         <div
                                             style={{
                                                 backgroundColor: "#746969",
-                                                padding: 10
+                                                padding: 5
                                             }}
                                         >
-                                            <p style={{color: "white"}}>{skill}</p>
+                                            <p style={{color: "white", margin: 0, textAlign: "center"}}>{skill}</p>
                                         </div>
                                     </Col>
                                 ))
