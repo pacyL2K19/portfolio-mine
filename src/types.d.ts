@@ -62,5 +62,8 @@ type Buttons = {
 }
 
 type Project = {
-    imgUrl: string
+    imgUrl: string,
+    title: string,
+    description?: string,
+    techs?: string[]
 }

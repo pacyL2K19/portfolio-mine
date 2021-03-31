@@ -1,4 +1,6 @@
 import React from 'react';
+import { theme } from '../../core/theme';
+import { Container, Row, Col } from "react-bootstrap";
 
 interface Props {
     project: Project
@@ -23,12 +25,40 @@ const Project: React.FC<Props> = (props: Props) => {
                         bottom: 15,
                         left: 20,
                         right: 20,
-                        backgroundColor: "red",
+                        // backgroundColor: theme.colors?.main,
+                        backgroundImage: 'linear-gradient(to top, '+theme.colors?.background+' , rgba(250, 250, 250, 0.5))',
                         zIndex: 100,
-                        opacity: 0.5
                     }}
                 >
-
+                    <h3
+                        style={{
+                            backgroundColor: theme.colors?.activeBtn,
+                            color: "white",
+                            textAlign: "center",
+                            margin: "40px -20px 0 40px",
+                            padding: 10,
+                            borderRadius: "0 30px 30px 0",                            
+                        }}>{props.project.title}
+                    </h3>
+                    <p style={{color: "white", fontSize: 18, marginTop: 120, padding: 30}}>{props.project.description}</p>
+                    <Container>
+                        <Row>
+                            {
+                                props.project.techs?.splice(0, 3).map(skill => (
+                                    <Col lg={"4"}>
+                                        <div
+                                            style={{
+                                                backgroundColor: "#746969",
+                                                padding: 10
+                                            }}
+                                        >
+                                            <p style={{color: "white"}}>{skill}</p>
+                                        </div>
+                                    </Col>
+                                ))
+                            }
+                        </Row>
+                    </Container>
                 </div>
             </div>
         </div>
