@@ -8,7 +8,7 @@ const Button: React.FC<Props> = (props: Props) => {
     return (
         <>
             <ButtonBox>
-                <p style={{textAlign: "center", fontSize: 23}}>{props.title}</p>
+                <p style={{textAlign: "center", margin: 0, fontSize: 24}}>{props.title}</p>
             </ButtonBox>
         </>
     )
