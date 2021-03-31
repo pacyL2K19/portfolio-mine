@@ -24,13 +24,21 @@ const MainProject: React.FC<Props> = () => {
                                 justifyContent: "center",
                                 padding: "auto 200px"
                             }}
+                        data-aos="fade-left"
+                        data-aos-duration="700"
+                        data-aos-anchor-placement="center-bottom"
                     >
                         <Image
                             src={projects.projects[0].imgUrl}
                             fluid
                         />
                     </Col>
-                    <Col lg={4}>
+                    <Col
+                        data-aos="fade-right"
+                        data-aos-duration="700"
+                        data-aos-anchor-placement="center-bottom"
+                        lg={4}
+                    >
                         <Row>
                             <Col lg={'12'}>
                                 <p className="h1">{ projects.projects[0].title }</p>

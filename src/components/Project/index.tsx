@@ -44,7 +44,12 @@ const Project: React.FC<Props> = (props: Props) => {
                         <Row>
                             {
                                 props.project.techs?.slice(0, 3).map(skill => (
-                                    <Col lg={"4"}>
+                                    <Col
+                                        lg={"4"}
+                                        data-aos="fade-down"
+                                        data-aos-duration="700"
+                                        data-aos-anchor-placement="center-bottom"
+                                    >
                                         <div
                                             style={{
                                                 backgroundColor: "#746969",

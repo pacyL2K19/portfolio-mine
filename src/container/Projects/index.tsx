@@ -23,10 +23,14 @@ const Projects: React.FC<Props> = () => {
                 </ProjectTitleSection>
                 <MainProject />
                 <Container style={{marginTop: 40}}>
-                    <Row>
+                    <Row data-aos="fade-right"
+                        data-aos-duration="700"
+                        data-aos-anchor-placement="center-bottom">
                         {
                             projects.projects.map(pro => (
-                                <Col lg={"4"}>
+                                <Col
+                                    lg={"4"}
+                                >
                                     <Project project={pro} />
                                 </Col>
                             ))
