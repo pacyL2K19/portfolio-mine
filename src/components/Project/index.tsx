@@ -5,7 +5,7 @@ interface Props {
 }
 const Project: React.FC<Props> = (props: Props) => {
     return (
-        <>
+        <div style={{padding: "20px 10px"}}>
             <div
                 style={{
                     backgroundImage : 'url('+props.project.imgUrl+')',
@@ -16,9 +16,22 @@ const Project: React.FC<Props> = (props: Props) => {
                     backgroundPosition: "center"
                 }}
             >
+                <div
+                    style={{
+                        position: 'absolute',
+                        top: 15,
+                        bottom: 15,
+                        left: 20,
+                        right: 20,
+                        backgroundColor: "red",
+                        zIndex: 100,
+                        opacity: 0.5
+                    }}
+                >
 
+                </div>
             </div>
-        </>
+        </div>
     )
 }
 
