@@ -11,9 +11,10 @@ const Skills: React.FC<Props> = (props: Props) => {
                     <div
                         style={{
                             padding: 10,
-                            border: "1px solid black",
+                            border: "1px solid #ff7b00",
                             borderRadius: 5,
-                            margin: 10
+                            margin: 10,
+                            color: "#fff"
                         }}
                     >
                         {skill}

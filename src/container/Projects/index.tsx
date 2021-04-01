@@ -16,7 +16,7 @@ const Projects: React.FC<Props> = () => {
         <>
             <Box>
                 <ProjectTitleSection>
-                    <Text color="#ooo" fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>
+                    <Text color="#fff" fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>
                         {projects.title}
                     </Text>
                     <LineSeparator />
