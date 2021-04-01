@@ -65,5 +65,6 @@ type Project = {
     imgUrl: string,
     title: string,
     description?: string,
-    techs?: string[]
+    techs?: string[],
+    id: number
 }

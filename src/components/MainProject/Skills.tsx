@@ -9,6 +9,7 @@ const Skills: React.FC<Props> = (props: Props) => {
             {
                 props.SkillsItems.map(skill => (
                     <div
+                        key={skill}
                         style={{
                             padding: 10,
                             border: "1px solid #ff7b00",

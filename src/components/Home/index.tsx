@@ -20,7 +20,7 @@ const Home : React.FC<Home> = (props: Home) => {
                 >
                     <Grid container>
                         {
-                            data.icons.map(i => <Grid item xs = {3} md = {3} lg = {12} xl = {12} ><Icon className={i.class}></Icon></Grid>)
+                            data.icons.map(i => <Grid key={i.class} item xs = {3} md = {3} lg = {12} xl = {12} ><Icon className={i.class}></Icon></Grid>)
                         }
                     </Grid>
                 </Grid>

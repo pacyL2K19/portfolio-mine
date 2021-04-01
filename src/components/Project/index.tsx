@@ -10,6 +10,7 @@ const Project: React.FC<Props> = (props: Props) => {
     return (
         <div style={{padding: "20px 10px"}}>
             <ProjectBox
+                key={props.project.id}
                 style={{
                     backgroundImage : 'url('+props.project.imgUrl+')',
                     backgroundRepeat:"no-repeat",
@@ -47,6 +48,7 @@ const Project: React.FC<Props> = (props: Props) => {
                             {
                                 props.project.techs?.slice(0, 3).map(skill => (
                                     <Col
+                                        key={skill}
                                         lg={"4"}
                                         data-aos="fade-down"
                                         data-aos-duration="700"
@@ -55,6 +57,9 @@ const Project: React.FC<Props> = (props: Props) => {
                                         <div
                                             style={{
                                                 backgroundColor: "#746969",
+                                                borderColor: theme.colors?.clickBtn,
+                                                borderWidth: 1,
+                                                borderStyle: 'solid',
                                                 padding: 5
                                             }}
                                         >

@@ -46,7 +46,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 5,
             "title": "MagoEat Backend",
             "description": "THis is the backend project built with ExpressJs, Mongodb and Mongoose as the ORM. This app makes the frontend Mobile App dynamic and connects it to the datanase",
             "live_link": "#",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": 6,
             "title": "Horizon Travel Plus",
             "description": "Horizon Travel Plus is a travel agency, this web site is built in PHP and allows users to contact the compony and reserve places in holtels, air planes, ... for different reasons",
             "live_link": "www.horizontravelplus.com",

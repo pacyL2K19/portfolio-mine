@@ -27,6 +27,7 @@ const Projects: React.FC<Props> = () => {
                         {
                             projects.projects.map(pro => (
                                 <Col
+                                    key={pro.id}
                                     data-aos="zoom-in-up"
                                     lg={"4"}
                                 >
