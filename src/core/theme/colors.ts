@@ -3,7 +3,7 @@ export const colors: Colors = {
     mainText: "#ebe0df",
     secondaryText: "String",
     background: "#1C1A19",
-    activeBtn: "String",
+    activeBtn: "#F55800",
     clickBtn: "#F4F1F0",
     disabledBtn: "String",
     titleText: "#F55800",

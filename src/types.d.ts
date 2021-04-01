@@ -1,9 +1,19 @@
 interface Colors {
-    // requiered colors
+
+    /**
+     * @constant Colors 
+     * required
+     */
+
     main: string,
     mainText: string,
     secondaryText: string
-    // unrequiered 
+
+    /**
+     * @constant Colors 
+     * unrequired
+     */
+
     background?: string,
     navBgcol: string,
     activeBtn?: string,
@@ -30,7 +40,7 @@ interface Theme {
 }
 
 type Nav = {
-    items: String[],
+    items: string[],
     // theme: Theme
 }
 
@@ -44,4 +54,17 @@ type Texts = {
     color: string | undefined,
     fontSize: string | undefined,
     fontFamilly: string | undefined
+}
+
+type Buttons = {
+    // backgroundColor: string | undefined
+    title: string | undefined
+}
+
+type Project = {
+    imgUrl: string,
+    title: string,
+    description?: string,
+    techs?: string[],
+    id: number
 }
