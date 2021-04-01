@@ -1,6 +1,7 @@
 import React from 'react';
 import { theme } from '../../core/theme';
 import { Container, Row, Col } from "react-bootstrap";
+import { ProjectBox } from "./styled";
 
 interface Props {
     project: Project
@@ -8,7 +9,7 @@ interface Props {
 const Project: React.FC<Props> = (props: Props) => {
     return (
         <div style={{padding: "20px 10px"}}>
-            <div
+            <ProjectBox
                 style={{
                     backgroundImage : 'url('+props.project.imgUrl+')',
                     backgroundRepeat:"no-repeat",
@@ -19,6 +20,7 @@ const Project: React.FC<Props> = (props: Props) => {
                 }}
             >
                 <div
+                    className="overlay"
                     style={{
                         position: 'absolute',
                         top: 15,
@@ -64,7 +66,10 @@ const Project: React.FC<Props> = (props: Props) => {
                         </Row>
                     </Container>
                 </div>
-            </div>
+                <div className="button" style={{ padding: 15, display: "none" }}>
+                    See Project
+                </div>
+            </ProjectBox>
         </div>
     )
 }

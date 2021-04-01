@@ -23,12 +23,11 @@ const Projects: React.FC<Props> = () => {
                 </ProjectTitleSection>
                 <MainProject />
                 <Container style={{marginTop: 40}}>
-                    <Row data-aos="fade-right"
-                        data-aos-duration="700"
-                        data-aos-anchor-placement="center-bottom">
+                    <Row>
                         {
                             projects.projects.map(pro => (
                                 <Col
+                                    data-aos="zoom-in-up"
                                     lg={"4"}
                                 >
                                     <Project project={pro} />
