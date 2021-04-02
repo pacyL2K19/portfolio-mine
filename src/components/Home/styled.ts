@@ -10,10 +10,10 @@ export const Icon = styled.i`
 `
 
 export const Profile = styled.div`
-    height: 250px;
+    /* height: 250px;
     width: 250px;
     border-radius: 125px;
-    box-shadow: 0 0 30px white;
+    box-shadow: 0 0 30px white; */
 `
 
 export const Text = styled.h2<Texts>`

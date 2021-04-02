@@ -3,13 +3,14 @@ import { Grid } from '@material-ui/core';
 import { Box, Icon, Profile, Text } from './styled';
 import data from '../../helper/header.json';
 import { theme } from '../../core/theme';
-import profile from '../../assets/img.png';
+import profile from '../../assets/img1.png';
 
 const Home : React.FC<Home> = (props: Home) => {
     return (
         <Box>
             <Grid
                 container
+                className="align-items-center"
             >
                 <Grid
                     item
@@ -76,7 +77,7 @@ const Home : React.FC<Home> = (props: Home) => {
                         <img
                             src={profile}
                             alt=" Pacifique Linjanja "
-                            style={{height: 250, width: 250, borderRadius: 125}}
+                            style={{height: 400}}
                         />
                     </Profile>
                 </Grid>
