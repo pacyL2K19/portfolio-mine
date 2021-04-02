@@ -3,6 +3,7 @@ import projects from '../../helper/projects.json';
 import { Row, Container, Col, Image } from "react-bootstrap";
 import Skills from "./Skills";
 import Button from "../../components/Button";
+import { theme } from '../../core/theme';
 interface Props {
 
 }
@@ -17,7 +18,7 @@ const MainProject: React.FC<Props> = () => {
                         style=
                             {{
                                 height: 500,
-                                backgroundColor: "rgba(199, 140, 32, 0.4)",
+                                backgroundColor: theme.colors?.activeBtn,
                                 borderRadius: 10,
                                 display: "flex",
                                 alignItems: 'center',
