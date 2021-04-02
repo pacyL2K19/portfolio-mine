@@ -47,23 +47,25 @@ const About: React.FC<Props> = () => {
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.languages.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Languages</p>
                         {
                             about.skills.languages.techs.map((language) => (
-                                <p key = {language} data-aos="flip-left" style={{color: theme.colors?.mainText}}>{language}</p>
+                                <p key = {language} data-aos="flip-right" data-aos-duration="700" style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {language}</p>
                             ))
                         }
                     </Col>
                     <Col lg = {"4"}>
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.frameWorks.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Frameworks</p>
-                        {
-                            about.skills.frameWorks.techs.map((framework) => (
-                                <p key = {framework} style={{color: theme.colors?.mainText}}>{framework}</p>
-                            ))
-                        }
+                        <div data-aos="zoom-in">
+                            {
+                                about.skills.frameWorks.techs.map((framework) => (
+                                    <p key = {framework} style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {framework}</p>
+                                ))
+                            }
+                        </div>
                     </Col>
                     <Col lg = {"4"}>
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.skills.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Tools</p>
                         {
                             about.skills.skills.techs.map((skill) => (
-                                <p key={skill} data-aos="flip-rigth" style={{color: theme.colors?.mainText}}>{skill}</p>
+                                <p key={skill} data-aos="flip-left" data-aos-duration="700" style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {skill}</p>
                             ))
                         }
                     </Col>
