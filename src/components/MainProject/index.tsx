@@ -17,7 +17,7 @@ const MainProject: React.FC<Props> = () => {
                         style=
                             {{
                                 height: 500,
-                                backgroundColor: "#c78c20",
+                                backgroundColor: "rgba(199, 140, 32, 0.4)",
                                 borderRadius: 10,
                                 display: "flex",
                                 alignItems: 'center',

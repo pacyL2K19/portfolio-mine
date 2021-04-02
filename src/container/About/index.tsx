@@ -23,6 +23,9 @@ const About: React.FC<Props> = () => {
                         </Text>
                         <div style={{height: 0.5, margin: "35px 0", backgroundColor: "#fff", width: "50%"}}></div>
                         <Text
+                            className="mt-5 mb-0"
+                            data-aos="zoom-in"
+                            data-aos-duration="700"
                             fontSize={theme.fonts?.secondary.fontSize}
                             fontFamilly={theme.fonts?.title.fontFamilly}
                             color={theme.colors?.mainText}
