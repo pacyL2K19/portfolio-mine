@@ -2,13 +2,14 @@ import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import { Text } from "../../components/Home/styled";
 import { theme } from '../../core/theme';
+import { Box } from "./styled";
 interface Props {
 
 }
 const About: React.FC<Props> = () => {
     return (
-        <>
-            <Container>
+        <Box>
+            <Container fluid>
                 <Row>
                     <Col>
                         <Text
@@ -25,7 +26,7 @@ const About: React.FC<Props> = () => {
                 </Row>
                 <div style={{}}></div>
             </Container>
-        </>
+        </Box>
     )
 }
 
