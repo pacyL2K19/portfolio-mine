@@ -14,7 +14,7 @@ const About: React.FC<Props> = () => {
                         <Text
                             fontSize={theme.fonts?.title.fontSize}
                             fontFamilly={theme.fonts?.title.fontFamilly}
-                            color={theme.colors?.mainText}
+                            color={theme.colors?.activeBtn}
                         >
                             Test
                         </Text>
