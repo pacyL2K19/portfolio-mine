@@ -47,7 +47,7 @@ const About: React.FC<Props> = () => {
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.languages.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Languages</p>
                         {
                             about.skills.languages.techs.map((language) => (
-                                <p style={{color: theme.colors?.mainText}}>{language}</p>
+                                <p key = {language} data-aos="flip-left" style={{color: theme.colors?.mainText}}>{language}</p>
                             ))
                         }
                     </Col>
@@ -55,7 +55,7 @@ const About: React.FC<Props> = () => {
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.frameWorks.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Frameworks</p>
                         {
                             about.skills.frameWorks.techs.map((framework) => (
-                                <p style={{color: theme.colors?.mainText}}>{framework}</p>
+                                <p key = {framework} style={{color: theme.colors?.mainText}}>{framework}</p>
                             ))
                         }
                     </Col>
@@ -63,7 +63,7 @@ const About: React.FC<Props> = () => {
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.skills.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Tools</p>
                         {
                             about.skills.skills.techs.map((skill) => (
-                                <p style={{color: theme.colors?.mainText}}>{skill}</p>
+                                <p key={skill} data-aos="flip-rigth" style={{color: theme.colors?.mainText}}>{skill}</p>
                             ))
                         }
                     </Col>
