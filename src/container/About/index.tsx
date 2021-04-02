@@ -42,7 +42,16 @@ const About: React.FC<Props> = () => {
                     </Col>
                 </Row>
                 <div style={{height: 0.5, margin: "100px 0", backgroundColor: "#fff", width: "100%"}}></div>
-                <div style={{}}></div>
+                <Row style={{padding: "0px 3%"}}>
+                    <Col lg = {"4"}>
+                        <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className="fas fa-terminal" style={{color: theme.colors?.activeBtn}}></i> Languages</p>
+                        {
+                            about.skills.languages.map((language) => (
+                                <p style={{color: theme.colors?.mainText}}>{language}</p>
+                            ))
+                        }
+                    </Col>
+                </Row>
             </Container>
         </Box>
     )
