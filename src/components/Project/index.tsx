@@ -60,7 +60,7 @@ const Project: React.FC<Props> = (props: Props) => {
                                                 borderColor: theme.colors?.clickBtn,
                                                 borderWidth: 1,
                                                 borderStyle: 'solid',
-                                                padding: 5
+                                                padding: 3
                                             }}
                                         >
                                             <p style={{color: "white", margin: 0, textAlign: "center"}}>{skill}</p>
