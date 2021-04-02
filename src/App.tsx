@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './container/Header';
 import Menu from './components/Menu';
 import Project from "./container/Projects";
+import About from "./container/About";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos";
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Menu navs={['Home', 'About', 'Contacts']} />
         <Header />
         <Project />
+        <About />
       </div>
     );
   }

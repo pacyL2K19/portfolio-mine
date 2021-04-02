@@ -1,4 +1,5 @@
 import React from 'react';
+import { theme } from '../../core/theme';
 
 interface Props {
     SkillsItems: string[]
@@ -15,7 +16,8 @@ const Skills: React.FC<Props> = (props: Props) => {
                             border: "1px solid #ff7b00",
                             borderRadius: 5,
                             margin: 10,
-                            color: "#fff"
+                            color: theme.colors?.mainText,
+                            // backgroundColor: "#fff"
                         }}
                     >
                         {skill}

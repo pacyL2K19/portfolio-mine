@@ -3,6 +3,7 @@ import projects from '../../helper/projects.json';
 import { Row, Container, Col, Image } from "react-bootstrap";
 import Skills from "./Skills";
 import Button from "../../components/Button";
+import { theme } from '../../core/theme';
 interface Props {
 
 }
@@ -17,8 +18,8 @@ const MainProject: React.FC<Props> = () => {
                         style=
                             {{
                                 height: 500,
-                                backgroundColor: "#c78c20",
-                                borderRadius: 10,
+                                backgroundColor: theme.colors?.activeBtn,
+                                borderRadius: 5,
                                 display: "flex",
                                 alignItems: 'center',
                                 justifyContent: "center",
@@ -42,10 +43,10 @@ const MainProject: React.FC<Props> = () => {
                         <Row>
                             <Col lg={'12'}>
                                 <p className="h1" style={{color: "#fff"}}>{ projects.projects[0].title }</p>
-                                <div style={{height: 1, margin: "50px 0", backgroundColor: "#fff", width: "100%"}}></div>
+                                <div style={{height: 1, margin: "50px 0", backgroundColor: theme.colors?.activeBtn, width: "100%"}}></div>
                             </Col>
                             <Col lg={'12'}>
-                                <p style={{fontSize: 22, color: "#fff"}}>{ projects.projects[0].description }</p>
+                                <p style={{fontSize: 20, color: theme.colors?.mainText, marginBottom: 40}}>{ projects.projects[0].description }</p>
                             </Col>
                             <Col lg={'12'}>
                                 <Skills SkillsItems={projects.projects[0].techs} />

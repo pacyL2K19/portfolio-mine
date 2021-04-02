@@ -1,0 +1,37 @@
+{
+    "description": "Hello I’m a software engineer! I can help you build a backend applications , mobile applications, web applications or fix issues on existing projects. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.",
+    "resumeUrl": "https://drive.google.com/file/d/1PSHIPnZBt5w4loSuADlCA18L8pCMLC2k/view?usp=sharing",
+    "skills": {
+        "languages": {
+            "icon": "fas fa-code",
+            "techs": [
+                "Javascript",
+                "Ruby",
+                "Php",
+                "Html",
+                "CSS"
+            ]
+        },
+        "frameWorks": {
+            "icon": "fas fa-terminal",
+            "techs": [
+                "ReactJs",
+                "ExpressJs",
+                "Ruby On Rails",
+                "VueJs",
+                "Bootstrap",
+                "Rspec"
+            ]
+        },
+        "skills": {
+            "icon": "fas fa-code-branch",
+            "techs": [
+                "Git",
+                "GitHub",
+                "GitLab",
+                "Terminal",
+                "Codepen"
+            ]
+        }
+    }
+}
