@@ -17,7 +17,8 @@ const About: React.FC<Props> = () => {
                         <Text
                             fontSize={theme.fonts?.title.fontSize}
                             fontFamilly={theme.fonts?.title.fontFamilly}
-                            color={theme.colors?.activeBtn}
+                            color={theme.colors?.mainText}
+                            style={{fontWeight: "bold"}}
                         >
                             About Me
                         </Text>
@@ -26,7 +27,7 @@ const About: React.FC<Props> = () => {
                             className="mt-5 mb-0"
                             data-aos="zoom-in"
                             data-aos-duration="700"
-                            fontSize={theme.fonts?.secondary.fontSize}
+                            fontSize={theme.fonts?.subtitle.fontSize}
                             fontFamilly={theme.fonts?.title.fontFamilly}
                             color={theme.colors?.mainText}
                         >

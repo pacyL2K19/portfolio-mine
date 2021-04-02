@@ -19,7 +19,7 @@ const MainProject: React.FC<Props> = () => {
                             {{
                                 height: 500,
                                 backgroundColor: theme.colors?.activeBtn,
-                                borderRadius: 10,
+                                borderRadius: 5,
                                 display: "flex",
                                 alignItems: 'center',
                                 justifyContent: "center",
@@ -43,10 +43,10 @@ const MainProject: React.FC<Props> = () => {
                         <Row>
                             <Col lg={'12'}>
                                 <p className="h1" style={{color: "#fff"}}>{ projects.projects[0].title }</p>
-                                <div style={{height: 1, margin: "50px 0", backgroundColor: "#fff", width: "100%"}}></div>
+                                <div style={{height: 1, margin: "50px 0", backgroundColor: theme.colors?.activeBtn, width: "100%"}}></div>
                             </Col>
                             <Col lg={'12'}>
-                                <p style={{fontSize: 22, color: "#fff"}}>{ projects.projects[0].description }</p>
+                                <p style={{fontSize: 20, color: theme.colors?.mainText, marginBottom: 40}}>{ projects.projects[0].description }</p>
                             </Col>
                             <Col lg={'12'}>
                                 <Skills SkillsItems={projects.projects[0].techs} />

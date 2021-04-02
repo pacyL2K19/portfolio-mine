@@ -13,11 +13,11 @@ const Skills: React.FC<Props> = (props: Props) => {
                         key={skill}
                         style={{
                             padding: 10,
-                            border: "2px solid #ff7b00",
+                            border: "1px solid #ff7b00",
                             borderRadius: 5,
                             margin: 10,
-                            color: theme.colors?.main,
-                            backgroundColor: "#fff"
+                            color: theme.colors?.mainText,
+                            // backgroundColor: "#fff"
                         }}
                     >
                         {skill}

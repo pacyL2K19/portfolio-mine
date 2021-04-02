@@ -13,7 +13,7 @@ export const ProjectTitleSection = styled.div`
 `
 
 export const LineSeparator = styled.div`
-    height: 2px;
+    height: 1px;
     background-color: white;
     width: 80%;
     align-self: center;
