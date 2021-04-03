@@ -38,8 +38,8 @@ const About: React.FC<Props> = () => {
                             }
                         </Text>
                         <Row>
-                            <Col lg = {"5"}>
-                                <Button title = "My Resume" />
+                            <Col lg = {"4"}>
+                                <Button title = "My Resume" icon="fas fa-file" />
                             </Col>
                         </Row>
                     </Col>

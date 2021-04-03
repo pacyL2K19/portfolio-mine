@@ -14,10 +14,8 @@ const Skills: React.FC<Props> = (props: Props) => {
                         style={{
                             padding: 5,
                             border: "1px solid #ff7b00",
-                            borderRadius: 5,
                             margin: 10,
                             color: theme.colors?.mainText,
-                            // backgroundColor: "#fff"
                         }}
                     >
                         {skill}
