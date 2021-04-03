@@ -11,6 +11,8 @@ export const ProjectBox = styled.div`
 
     &:hover .overlay {
         z-index: -1 !important;
+        animation-duration: 3s;
+        animation-name: bgOpacity;
     }
 
     &:hover .button {

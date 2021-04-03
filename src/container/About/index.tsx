@@ -5,6 +5,8 @@ import { theme } from '../../core/theme';
 import { Box } from "./styled";
 import about from "../../helper/about.json";
 import Button from "../../components/Button";
+import profile from '../../assets/img1.png';
+import { Profile } from '../../components/Home/styled';
 interface Props {
 
 }
@@ -42,7 +44,17 @@ const About: React.FC<Props> = () => {
                         </Row>
                     </Col>
                     <Col>
-                    
+                        <Profile
+                            data-aos="zoom-in-up"
+                            data-aos-duration="1100"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            <img
+                                src={profile}
+                                alt=" Pacifique Linjanja "
+                                style={{height: 500}}
+                            />
+                        </Profile>
                     </Col>
                 </Row>
                 <div style={{height: 0.5, margin: "100px 0", backgroundColor: "#fff", width: "100%"}}></div>
