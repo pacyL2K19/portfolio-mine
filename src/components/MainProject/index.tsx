@@ -19,7 +19,6 @@ const MainProject: React.FC<Props> = () => {
                             {{
                                 height: 500,
                                 backgroundColor: theme.colors?.activeBtn,
-                                borderRadius: 5,
                                 display: "flex",
                                 alignItems: 'center',
                                 justifyContent: "center",

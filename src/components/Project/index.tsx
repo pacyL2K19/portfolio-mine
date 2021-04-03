@@ -8,7 +8,7 @@ interface Props {
 }
 const Project: React.FC<Props> = (props: Props) => {
     return (
-        <div style={{padding: "20px 10px"}}>
+        <div style={{padding: "20px 10px", borderColor: theme.colors?.activeBtn, borderWidth: 2, borderStyle: 'solid'}}>
             <ProjectBox
                 key={props.project.id}
                 style={{
@@ -24,8 +24,8 @@ const Project: React.FC<Props> = (props: Props) => {
                     className="overlay"
                     style={{
                         position: 'absolute',
-                        top: 15,
-                        bottom: 15,
+                        top: 30,
+                        bottom: 30,
                         left: 20,
                         right: 20,
                         backgroundImage: 'linear-gradient(to top, '+theme.colors?.background+' , rgba(250, 250, 250, 0.5))',

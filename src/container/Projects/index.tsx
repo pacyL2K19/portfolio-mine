@@ -32,6 +32,7 @@ const Projects: React.FC<Props> = () => {
                                     lg={"4"}
                                 >
                                     <Project project={pro} />
+                                    <br />
                                 </Col>
                             ))
                         }
