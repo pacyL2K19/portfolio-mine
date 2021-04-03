@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { theme } from '../../core/theme';
 
 export const Box = styled.section`
     padding: 100px 5%;
+    background-color: white
 `
 
 export const ProjectTitleSection = styled.div`
@@ -14,7 +16,7 @@ export const ProjectTitleSection = styled.div`
 
 export const LineSeparator = styled.div`
     height: 1px;
-    background-color: white;
+    background-color: ${theme.colors?.main};
     width: 80%;
     align-self: center;
     margin-left: 10px

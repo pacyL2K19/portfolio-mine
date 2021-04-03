@@ -42,11 +42,11 @@ const MainProject: React.FC<Props> = () => {
                     >
                         <Row>
                             <Col lg={'12'}>
-                                <p className="h1" style={{color: "#fff"}}>{ projects.projects[0].title }</p>
+                                <p className="h1" style={{color: theme.colors?.main}}>{ projects.projects[0].title }</p>
                                 <div style={{height: 1, margin: "50px 0", backgroundColor: theme.colors?.activeBtn, width: "100%"}}></div>
                             </Col>
                             <Col lg={'12'}>
-                                <p style={{fontSize: 20, color: theme.colors?.mainText, marginBottom: 40}}>{ projects.projects[0].description }</p>
+                                <p style={{fontSize: 20, color: theme.colors?.main, marginBottom: 40}}>{ projects.projects[0].description }</p>
                             </Col>
                             <Col lg={'12'}>
                                 <Skills SkillsItems={projects.projects[0].techs} />
