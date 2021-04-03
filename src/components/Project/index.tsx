@@ -71,8 +71,8 @@ const Project: React.FC<Props> = (props: Props) => {
                         </Row>
                     </Container>
                 </div>
-                <div className="button" style={{ padding: 15, display: "none" }}>
-                    See Project
+                <div className="button" style={{ padding: 10, display: "none" }}>
+                    <i className="fas fa-eye"></i> See Project
                 </div>
             </ProjectBox>
         </div>
