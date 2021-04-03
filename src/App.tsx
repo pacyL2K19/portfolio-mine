@@ -8,7 +8,11 @@ import "aos/dist/aos.css";
 import "aos/dist/aos";
 import { theme } from './core/theme';
 
-const App = () => {
+interface Props {
+
+}
+
+const App: React.FC<Props> = () => {
   useEffect(() => {
     AOS.init();
     document.body.style.margin = "0px";
