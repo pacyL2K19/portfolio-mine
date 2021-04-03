@@ -77,7 +77,7 @@ const Home : React.FC<Home> = (props: Home) => {
                         <img
                             src={profile}
                             alt=" Pacifique Linjanja "
-                            style={{height: 400}}
+                            style={{height: 500}}
                         />
                     </Profile>
                 </Grid>
