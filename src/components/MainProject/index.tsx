@@ -51,8 +51,11 @@ const MainProject: React.FC<Props> = () => {
                             <Col lg={'12'}>
                                 <Skills SkillsItems={projects.projects[0].techs} />
                             </Col>
-                            <Col lg={'5'}>
-                                <Button title = "See Project" />
+                            <Col>
+                                <Button title = "Live version" icon="fas fa-eye" />
+                            </Col>
+                            <Col>
+                                <Button title = "Source code" icon="fab fa-github" />
                             </Col>
                         </Row>
                     </Col>
