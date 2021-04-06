@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import { Text, Box } from "./styled";
 import data from "../../helper/contacts.json";
+import homeData from "../../helper/header.json";
 import TextField from '@material-ui/core/TextField';
 import Button from "../../components/Button";
 
@@ -72,9 +73,12 @@ const Contacts: React.FC<Props> = () => {
                         <Button title={data['button-title']} />
                     </Col>
                 </Row>
-                <Row>
-
-                </Row>
+                <div style={{height: 0.5, margin: "150px 0 35px 0", backgroundColor: "#DFE1E6"}}></div>
+                <div className="d-flex align-items-center justify-content-center">
+                    {
+                        homeData.icons.map(i => <h2 style={{color: "#505F79", fontSize: 20}} className="mx-3" key={i.class}><i className={i.class}></i></h2>)
+                    }
+                </div>
             </Container>
         </Box>
     )

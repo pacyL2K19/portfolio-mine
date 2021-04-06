@@ -7,7 +7,7 @@ import profile from '../../assets/img.png';
 
 const Home : React.FC<Home> = (props: Home) => {
     return (
-        <Box>
+        <Box> 
             <Grid
                 container
                 className="align-items-center"
