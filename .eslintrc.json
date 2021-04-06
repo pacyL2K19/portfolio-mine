@@ -1,3 +1,4 @@
+// .eslintrc.json
 {
     "env": {
         "browser": true,
@@ -8,7 +9,10 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended"
     ],
-    "parser": "@typescript-eslint/parser",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -21,5 +25,21 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
     }
 }
