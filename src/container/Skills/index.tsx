@@ -1,13 +1,11 @@
-import React from 'react';
-interface Props {
+import React from "react";
 
-}
-const Skills: React.FC<Props> = () => {
+const Skills: React.FC = () => {
     return (
         <>
         
         </>
-    )
-}
+    );
+};
 
-export default Skills
+export default Skills;

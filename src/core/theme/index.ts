@@ -1,5 +1,5 @@
-import {colors} from './colors';
-import { primaryFonts, secondaryFonts, titleFonts, subTitleFonts } from './fonts';
+import {colors} from "./colors";
+import { primaryFonts, secondaryFonts, titleFonts, subTitleFonts } from "./fonts";
 
 export const theme: Theme = {
     fonts: {
@@ -9,4 +9,4 @@ export const theme: Theme = {
         primary: primaryFonts
     },
     colors
-}
+};
