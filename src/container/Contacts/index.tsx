@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import { Text, Box } from "./styled";
 import data from "../../helper/contacts.json";
 import TextField from '@material-ui/core/TextField';
+import Button from "../../components/Button";
 
 interface Props {
 
 }
+
 const Contacts: React.FC<Props> = () => {
+    const [firstName, setFIrstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [message, setMessage] = useState(data.sample);
+    const [email, setEmail] = useState("");
     return (
         <Box>
             <Container fluid>
-                <Row>
+                <Row className="d-flex align-items-center justify-content-center">
                     <Col lg={"4"} className="px-5">
                         <Text>
                             {
@@ -19,7 +25,7 @@ const Contacts: React.FC<Props> = () => {
                             }
                         </Text>
                     </Col>
-                    <Col lg={"8"}>
+                    <Col lg={"8"} className="px-5">
                         <Row>
                             <Col lg={"6"}>
                                 <TextField
@@ -28,10 +34,8 @@ const Contacts: React.FC<Props> = () => {
                                     id="first-name"
                                     name="firstName"
                                     label="First Name"
-                                    // value={formik.values.email}
-                                    // onChange={formik.handleChange}
-                                    // error={formik.touched.email && Boolean(formik.errors.email)}
-                                    // helperText={formik.touched.email && formik.errors.email}
+                                    value={firstName}
+                                    onChange={(e) => setFIrstName(e.target.value)}
                                 />
                             </Col>
                             <Col lg={"6"}>
@@ -41,10 +45,8 @@ const Contacts: React.FC<Props> = () => {
                                     id="last-name"
                                     name="lasttName"
                                     label="Last Name"
-                                    // value={formik.values.email}
-                                    // onChange={formik.handleChange}
-                                    // error={formik.touched.email && Boolean(formik.errors.email)}
-                                    // helperText={formik.touched.email && formik.errors.email}
+                                    value={lastName}
+                                    onChange={(e) => setLastName(e.target.value)}
                                 />
                             </Col>
                         </Row>
@@ -54,10 +56,8 @@ const Contacts: React.FC<Props> = () => {
                             id="email"
                             name="email"
                             label="Email"
-                            // value={formik.values.email}
-                            // onChange={formik.handleChange}
-                            // error={formik.touched.email && Boolean(formik.errors.email)}
-                            // helperText={formik.touched.email && formik.errors.email}
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                         <TextField
                             fullWidth
@@ -66,11 +66,10 @@ const Contacts: React.FC<Props> = () => {
                             name="message"
                             label="Message"
                             multiline
-                            // value={formik.values.email}
-                            // onChange={formik.handleChange}
-                            // error={formik.touched.email && Boolean(formik.errors.email)}
-                            // helperText={formik.touched.email && formik.errors.email}
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                         />
+                        <Button title={data['button-title']} />
                     </Col>
                 </Row>
                 <Row>
