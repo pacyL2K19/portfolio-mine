@@ -9,11 +9,8 @@ import "aos/dist/aos";
 import { theme } from './core/theme';
 import Contacts from './container/Contacts';
 
-interface Props {
 
-}
-
-const App: React.FC<Props> = () => {
+const App: React.FC = () => {
   useEffect(() => {
     AOS.init();
     document.body.style.margin = "0px";

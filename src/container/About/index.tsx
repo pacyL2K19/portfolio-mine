@@ -7,10 +7,8 @@ import about from "../../helper/about.json";
 import Button from "../../components/Button";
 import profile from '../../assets/down.png';
 import { Profile } from '../../components/Home/styled';
-interface Props {
 
-}
-const About: React.FC<Props> = () => {
+const About: React.FC = () => {
     return (
         <Box>
             <Container fluid>

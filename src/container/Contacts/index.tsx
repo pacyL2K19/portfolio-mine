@@ -6,11 +6,8 @@ import homeData from "../../helper/header.json";
 import TextField from '@material-ui/core/TextField';
 import Button from "../../components/Button";
 
-interface Props {
 
-}
-
-const Contacts: React.FC<Props> = () => {
+const Contacts: React.FC = () => {
     const [firstName, setFIrstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [message, setMessage] = useState(data.sample);
