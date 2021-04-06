@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos";
 import { theme } from './core/theme';
+import Contacts from './container/Contacts';
 
 interface Props {
 
@@ -24,6 +25,7 @@ const App: React.FC<Props> = () => {
       <Header />
       <Project />
       <About />
+      <Contacts />
     </div>
   );
 }
