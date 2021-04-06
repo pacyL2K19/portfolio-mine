@@ -1,9 +1,9 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import { Box, Icon, Profile, Text } from './styled';
-import data from '../../helper/header.json';
-import { theme } from '../../core/theme';
-import profile from '../../assets/img.png';
+import React from "react";
+import { Grid } from "@material-ui/core";
+import { Box, Icon, Profile, Text } from "./styled";
+import data from "../../helper/header.json";
+import { theme } from "../../core/theme";
+import profile from "../../assets/img.png";
 
 const Home : React.FC<Home> = (props: Home) => {
     return (
@@ -64,9 +64,9 @@ const Home : React.FC<Home> = (props: Home) => {
                     lg = {5}
                     xs = {12}
                     style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center'
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
                     }}
                 >
                     <Profile
@@ -83,7 +83,7 @@ const Home : React.FC<Home> = (props: Home) => {
                 </Grid>
             </Grid>
         </Box>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
