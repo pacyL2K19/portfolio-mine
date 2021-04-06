@@ -5,7 +5,7 @@ import { theme } from '../../core/theme';
 import { Box } from "./styled";
 import about from "../../helper/about.json";
 import Button from "../../components/Button";
-import profile from '../../assets/img1.png';
+import profile from '../../assets/down.png';
 import { Profile } from '../../components/Home/styled';
 interface Props {
 
@@ -14,7 +14,7 @@ const About: React.FC<Props> = () => {
     return (
         <Box>
             <Container fluid>
-                <Row style={{padding: "0px 3%"}}>
+                <Row style={{padding: "0px 3%"}}  className="d-flex align-items-center justify-content-center">
                     <Col>
                         <Text
                             fontSize={theme.fonts?.title.fontSize}
@@ -43,7 +43,7 @@ const About: React.FC<Props> = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col>
+                    <Col  className="d-flex align-items-center justify-content-center">
                         <Profile
                             data-aos="zoom-in-up"
                             data-aos-duration="1100"
@@ -52,7 +52,7 @@ const About: React.FC<Props> = () => {
                             <img
                                 src={profile}
                                 alt=" Pacifique Linjanja "
-                                style={{height: 400}}
+                                style={{height: 500}}
                             />
                         </Profile>
                     </Col>
