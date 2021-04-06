@@ -28,7 +28,7 @@ const Project: React.FC<Props> = (props: Props) => {
                         bottom: 30,
                         left: 20,
                         right: 20,
-                        backgroundImage: 'linear-gradient(to top, '+theme.colors?.background+' , rgba(250, 250, 250, 0.5))',
+                        backgroundImage: 'linear-gradient(to top, '+theme.colors?.background+' , rgba(250, 250, 250, 0.3))',
                         zIndex: 100,
                     }}
                 >
