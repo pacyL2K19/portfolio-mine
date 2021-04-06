@@ -16,7 +16,7 @@ const Projects: React.FC<Props> = () => {
         <>
             <Box>
                 <ProjectTitleSection>
-                    <Text color="#fff" fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>
+                    <Text color={theme.colors?.main} fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>
                         {projects.title}
                     </Text>
                     <LineSeparator />
@@ -32,6 +32,7 @@ const Projects: React.FC<Props> = () => {
                                     lg={"4"}
                                 >
                                     <Project project={pro} />
+                                    <br />
                                 </Col>
                             ))
                         }

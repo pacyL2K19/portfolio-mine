@@ -41,7 +41,6 @@ interface Theme {
 
 type Nav = {
     items: string[],
-    // theme: Theme
 }
 
 type Home = {
@@ -57,7 +56,6 @@ type Texts = {
 }
 
 type Buttons = {
-    // backgroundColor: string | undefined
     title: string | undefined
 }
 
