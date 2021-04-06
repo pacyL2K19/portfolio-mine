@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Text = styled.h2`
     color: black;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
 `;
 
 export const Box = styled.div`
