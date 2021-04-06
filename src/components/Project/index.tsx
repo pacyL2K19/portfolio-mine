@@ -1,5 +1,5 @@
-import React from 'react';
-import { theme } from '../../core/theme';
+import React from "react";
+import { theme } from "../../core/theme";
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectBox } from "./styled";
 
@@ -8,11 +8,11 @@ interface Props {
 }
 const Project: React.FC<Props> = (props: Props) => {
     return (
-        <div style={{padding: "20px 10px", borderColor: theme.colors?.activeBtn, borderWidth: 2, borderStyle: 'solid'}}>
+        <div style={{padding: "20px 10px", borderColor: theme.colors?.activeBtn, borderWidth: 2, borderStyle: "solid"}}>
             <ProjectBox
                 key={props.project.id}
                 style={{
-                    backgroundImage : 'url('+props.project.imgUrl+')',
+                    backgroundImage : "url("+props.project.imgUrl+")",
                     backgroundRepeat:"no-repeat",
                     backgroundSize: "cover",
                     height: 500,
@@ -23,12 +23,12 @@ const Project: React.FC<Props> = (props: Props) => {
                 <div
                     className="overlay"
                     style={{
-                        position: 'absolute',
+                        position: "absolute",
                         top: 30,
                         bottom: 30,
                         left: 20,
                         right: 20,
-                        backgroundImage: 'linear-gradient(to top, '+theme.colors?.background+' , rgba(250, 250, 250, 0.3))',
+                        backgroundImage: "linear-gradient(to top, "+theme.colors?.background+" , rgba(250, 250, 250, 0.3))",
                         zIndex: 100,
                     }}
                 >
@@ -59,7 +59,7 @@ const Project: React.FC<Props> = (props: Props) => {
                                                 backgroundColor: "#746969",
                                                 borderColor: theme.colors?.clickBtn,
                                                 borderWidth: 1,
-                                                borderStyle: 'solid',
+                                                borderStyle: "solid",
                                                 padding: 3
                                             }}
                                         >
@@ -76,7 +76,7 @@ const Project: React.FC<Props> = (props: Props) => {
                 </div>
             </ProjectBox>
         </div>
-    )
-}
+    );
+};
 
-export default Project
+export default Project;

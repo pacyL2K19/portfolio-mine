@@ -1,5 +1,5 @@
-import React from 'react';
-import { theme } from '../../core/theme';
+import React from "react";
+import { theme } from "../../core/theme";
 
 interface Props {
     SkillsItems: string[]
@@ -23,7 +23,7 @@ const Skills: React.FC<Props> = (props: Props) => {
                 ))
             }
         </div>
-    )
-}
+    );
+};
 
-export default Skills
+export default Skills;

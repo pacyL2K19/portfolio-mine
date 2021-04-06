@@ -25,4 +25,4 @@ export const ProjectBox = styled.div`
         font-size: 22px
     }
 
-`
+`;
