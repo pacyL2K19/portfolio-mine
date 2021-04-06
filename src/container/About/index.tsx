@@ -1,12 +1,12 @@
-import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import { Text } from "../../components/Home/styled";
-import { theme } from '../../core/theme';
+import { theme } from "../../core/theme";
 import { Box } from "./styled";
 import about from "../../helper/about.json";
 import Button from "../../components/Button";
-import profile from '../../assets/down.png';
-import { Profile } from '../../components/Home/styled';
+import profile from "../../assets/down.png";
+import { Profile } from "../../components/Home/styled";
 
 const About: React.FC = () => {
     return (
@@ -86,7 +86,7 @@ const About: React.FC = () => {
                 </Row>
             </Container>
         </Box>
-    )
-}
+    );
+};
 
 export default About;

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import { Text, Box } from "./styled";
 import data from "../../helper/contacts.json";
 import homeData from "../../helper/header.json";
-import TextField from '@material-ui/core/TextField';
+import TextField from "@material-ui/core/TextField";
 import Button from "../../components/Button";
 
 
@@ -67,7 +67,7 @@ const Contacts: React.FC = () => {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         />
-                        <Button title={data['button-title']} />
+                        <Button title={data["button-title"]} />
                     </Col>
                 </Row>
                 <div style={{height: 0.5, margin: "150px 0 35px 0", backgroundColor: "#DFE1E6"}}></div>
@@ -78,7 +78,7 @@ const Contacts: React.FC = () => {
                 </div>
             </Container>
         </Box>
-    )
-}
+    );
+};
 
-export default Contacts
+export default Contacts;
