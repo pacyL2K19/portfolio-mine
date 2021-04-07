@@ -23,7 +23,21 @@
         "duration": ""
     },
     "about": {
-
+        "description": "zoom-in",
+        "image": "zoom-in-up",
+        "image-duration": "1100",
+        "description-duration": "700",
+        "languages": {
+            "name": "flip-right",
+            "duration": "700"
+        },
+        "frameworks": {
+            "name": "zoom-in"
+        },
+        "tools": {
+            "name": "flip-left",
+            "duration": "700"
+        }
     },
     "contacts": {
 
