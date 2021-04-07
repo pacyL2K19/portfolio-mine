@@ -1,4 +1,10 @@
 {
+    "navbar-items": [
+        "Portfolio",
+        "Projects",
+        "About",
+        "Contacts"
+    ],
     "texts": {
         "main": "Hey There, I am Pacifique",
         "title": "I am a Fullstack Software Engineer",

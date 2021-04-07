@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import "aos/dist/aos";
 import { theme } from "./core/theme";
 import Contacts from "./container/Contacts";
+import data from "./helper/header.json";
 
 
 const App: React.FC = () => {
@@ -18,7 +19,7 @@ const App: React.FC = () => {
 
     return (
         <div className = 'main' style={{margin: 0, padding: 0, backgroundColor: theme.colors?.background}}>
-            <Menu navs={["Portfolio", "Projects", "About", "Contacts"]} />
+            <Menu navs={data["navbar-items"]} />
             <Header />
             <Project />
             <About />
