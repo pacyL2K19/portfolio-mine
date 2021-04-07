@@ -1,9 +1,13 @@
 {
     "home": {
-        "introduction-text": "",
-        "image": "",
+        "introduction-text": "fade-down",
+        "title-text": "fade-left",
+        "description-text": "fade-right",
+        "image": "zoom-in-up",
         "icons": "",
-        "duration": ""
+        "duration-title": "850",
+        "duration-intro": "700",
+        "duration-description": "1100"
     },
     "projects": {
         "main-project": {

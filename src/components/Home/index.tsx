@@ -4,6 +4,7 @@ import { Box, Icon, Profile, Text } from "./styled";
 import social from "../../helper/social.json";
 import { theme } from "../../core/theme";
 import profile from "../../assets/img.png";
+import animations from "../../helper/animations.json";
 
 const Home : React.FC<Home> = (props: Home) => {
     return (
@@ -33,24 +34,24 @@ const Home : React.FC<Home> = (props: Home) => {
                     xs = {12}
                 >
                     <Text
-                        data-aos="fade-down"
-                        data-aos-duration="700"
+                        data-aos={animations.home["introduction-text"]}
+                        data-aos-duration={animations.home["duration-intro"]}
                         data-aos-anchor-placement="center-bottom"
                         color={theme.colors?.titleText}
                         fontSize={theme.fonts?.title.fontSize}
                         fontFamilly={theme.fonts?.title.fontFamilly}
                     >{props.main}</Text>
                     <Text
-                        data-aos="fade-left" 
-                        data-aos-duration="850"
+                        data-aos={animations.home["title-text"]}
+                        data-aos-duration={animations.home["duration-title"]}
                         data-aos-anchor-placement="center-bottom"
                         color={theme.colors?.mainText}
                         fontSize={theme.fonts?.secondary.fontSize}
                         fontFamilly={theme.fonts?.secondary.fontFamilly}
                     >{props.title}</Text>
                     <Text
-                        data-aos="fade-right"
-                        data-aos-duration="1100"
+                        data-aos={animations.home["description-text"]}
+                        data-aos-duration={animations.home["duration-description"]}
                         data-aos-anchor-placement="center-bottom"
                         color={theme.colors?.mainText}
                         fontSize={theme.fonts?.primary.fontSize}
@@ -70,8 +71,8 @@ const Home : React.FC<Home> = (props: Home) => {
                     }}
                 >
                     <Profile
-                        data-aos="zoom-in-up"
-                        data-aos-duration="1100"
+                        data-aos={animations.home.image}
+                        data-aos-duration={animations.home["duration-description"]}
                         data-aos-anchor-placement="center-bottom"
                     >
                         <img
