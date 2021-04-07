@@ -6,6 +6,7 @@ import { Box, ProjectTitleSection, LineSeparator } from "./styled";
 import MainProject from "../../components/MainProject";
 import Project from "../../components/Project";
 import { Row, Col, Container } from "react-bootstrap";
+import animations from "../../helper/animations.json";
 
 const Projects: React.FC = () => {
     return (
@@ -24,7 +25,7 @@ const Projects: React.FC = () => {
                             projects.projects.map(pro => (
                                 <Col
                                     key={pro.id}
-                                    data-aos="zoom-in-up"
+                                    data-aos={animations.projects.projects["project-box"]}
                                     lg={"4"}
                                 >
                                     <Project project={pro} />
