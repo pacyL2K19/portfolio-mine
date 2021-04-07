@@ -4,6 +4,7 @@ import { Row, Container, Col, Image } from "react-bootstrap";
 import Skills from "./Skills";
 import Button from "../../components/Button";
 import { theme } from "../../core/theme";
+import animations from "../../helper/animations.json";
 
 const MainProject: React.FC = () => {
     return (
@@ -21,8 +22,8 @@ const MainProject: React.FC = () => {
                                 justifyContent: "center",
                                 padding: "auto 200px"
                             }}
-                        data-aos="fade-right"
-                        data-aos-duration="700"
+                        data-aos={animations.projects["main-project"].image}
+                        data-aos-duration={animations.projects["main-project"].duration}
                         data-aos-anchor-placement="center-bottom"
                     >
                         <Image
@@ -31,8 +32,8 @@ const MainProject: React.FC = () => {
                         />
                     </Col>
                     <Col
-                        data-aos="fade-left"
-                        data-aos-duration="700"
+                        data-aos={animations.projects["main-project"]["description-bloc"]}
+                        data-aos-duration={animations.projects["main-project"].duration}
                         data-aos-anchor-placement="center-bottom"
                         lg={4}
                     >

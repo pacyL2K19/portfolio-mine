@@ -11,9 +11,9 @@
     },
     "projects": {
         "main-project": {
-            "image": "",
-            "description-bloc": "",
-            "duration": ""
+            "image": "fade-right",
+            "description-bloc": "fade-left",
+            "duration": "700"
         },
         "projects": {
             "skills-box": "",
