@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import { Box, Icon, Profile, Text } from "./styled";
-// import data from "../../helper/header.json";
 import social from "../../helper/social.json";
 import { theme } from "../../core/theme";
 import profile from "../../assets/img.png";
