@@ -62,13 +62,31 @@ const About: React.FC = () => {
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.languages.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Languages</p>
                         {
                             about.skills.languages.techs.map((language) => (
-                                <p key = {language} data-aos={animations.about.languages.name} data-aos-duration={animations.about.languages.duration} style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {language}</p>
+                                <p
+                                    key = {language}
+                                    data-aos={animations.about.languages.name}
+                                    data-aos-duration={animations.about.languages.duration}
+                                    style={{
+                                        color: theme.colors?.mainText
+                                    }}
+                                >
+                                    <i
+                                        className="fas fa-angle-right"
+                                        style={{
+                                            color: theme.colors?.activeBtn,
+                                            marginRight: 10
+                                        }}
+                                    ></i> 
+                                    {language}
+                                </p>
                             ))
                         }
                     </Col>
                     <Col lg = {"4"}>
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.frameWorks.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Frameworks</p>
-                        <div data-aos={animations.about.frameworks.name}>
+                        <div
+                            data-aos={animations.about.frameworks.name}
+                        >
                             {
                                 about.skills.frameWorks.techs.map((framework) => (
                                     <p key = {framework} style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {framework}</p>
@@ -77,7 +95,19 @@ const About: React.FC = () => {
                         </div>
                     </Col>
                     <Col lg = {"4"}>
-                        <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.skills.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Tools</p>
+                        <p style={{
+                            color: theme.colors?.mainText,
+                            fontSize: 28, fontWeight: "bold"
+                        }}>
+                            <i 
+                                className={about.skills.skills.icon}
+                                style={{
+                                    color: theme.colors?.activeBtn,
+                                    marginRight: 10
+                                }}
+                            ></i>
+                            Tools
+                        </p>
                         {
                             about.skills.skills.techs.map((skill) => (
                                 <p key={skill} data-aos={animations.about.tools.name} data-aos-duration={animations.about.tools.duration} style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {skill}</p>
