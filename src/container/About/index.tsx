@@ -10,7 +10,7 @@ import { Profile } from "../../components/Home/styled";
 
 const About: React.FC = () => {
     return (
-        <Box>
+        <Box id="about">
             <Container fluid>
                 <Row style={{padding: "0px 3%"}}  className="d-flex align-items-center justify-content-center">
                     <Col>

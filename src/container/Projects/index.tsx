@@ -10,7 +10,7 @@ import { Row, Col, Container } from "react-bootstrap";
 const Projects: React.FC = () => {
     return (
         <>
-            <Box>
+            <Box id="projects">
                 <ProjectTitleSection>
                     <Text color={theme.colors?.main} fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>
                         {projects.title}

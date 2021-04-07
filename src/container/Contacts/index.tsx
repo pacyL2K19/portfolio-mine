@@ -13,7 +13,7 @@ const Contacts: React.FC = () => {
     const [message, setMessage] = useState(data.sample);
     const [email, setEmail] = useState("");
     return (
-        <Box>
+        <Box id="contacts">
             <Container fluid>
                 <Row className="d-flex align-items-center justify-content-center">
                     <Col lg={"4"} className="px-5">
