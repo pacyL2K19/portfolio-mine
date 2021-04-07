@@ -2,6 +2,7 @@ import React from "react";
 import { theme } from "../../core/theme";
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectBox } from "./styled";
+import animations from "../../helper/animations.json";
 
 interface Props {
     project: Project
@@ -50,8 +51,8 @@ const Project: React.FC<Props> = (props: Props) => {
                                     <Col
                                         key={skill}
                                         lg={"4"}
-                                        data-aos="fade-down"
-                                        data-aos-duration="700"
+                                        data-aos={animations.projects.projects["skills-box"]}
+                                        data-aos-duration={animations.projects.projects.duration}
                                         data-aos-anchor-placement="center-bottom"
                                     >
                                         <div

@@ -16,8 +16,9 @@
             "duration": "700"
         },
         "projects": {
-            "skills-box": "",
-            "duration": ""
+            "project-box": "",
+            "skills-box": "fade-down",
+            "duration": "700"
         },
         "duration": ""
     },
