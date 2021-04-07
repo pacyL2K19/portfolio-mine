@@ -1,0 +1,26 @@
+{
+    "home": {
+        "introduction-text": "",
+        "image": "",
+        "icons": "",
+        "duration": ""
+    },
+    "projects": {
+        "main-project": {
+            "image": "",
+            "description-bloc": "",
+            "duration": ""
+        },
+        "projects": {
+            "skills-box": "",
+            "duration": ""
+        },
+        "duration": ""
+    },
+    "about": {
+
+    },
+    "contacts": {
+
+    }
+}
