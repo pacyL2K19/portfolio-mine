@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import Button from "../../components/Button";
 import { theme } from "../../core/theme";
 import animations from "../../helper/animations.json";
+import { ImageContainer } from "./styled";
 
 const MainProject: React.FC = () => {
     return (
@@ -13,23 +14,16 @@ const MainProject: React.FC = () => {
                 <Row style={{justifyContent: "space-around"}}>
                     <Col
                         lg={7}
-                        style=
-                            {{
-                                height: 500,
-                                backgroundColor: theme.colors?.activeBtn,
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                padding: "auto 200px"
-                            }}
                         data-aos={animations.projects["main-project"].image}
                         data-aos-duration={animations.projects["main-project"].duration}
                         data-aos-anchor-placement="center-bottom"
                     >
-                        <Image
-                            src={projects.projects[0].imgUrl}
-                            fluid
-                        />
+                        <ImageContainer>
+                            <Image
+                                src={projects.projects[0].imgUrl}
+                                fluid
+                            />
+                        </ImageContainer>
                     </Col>
                     <Col
                         data-aos={animations.projects["main-project"]["description-bloc"]}

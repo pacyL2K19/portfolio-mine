@@ -22,7 +22,7 @@ const Home : React.FC<Home> = (props: Home) => {
                 >
                     <Grid className="my-3" container>
                         {
-                            social.social.map(i => <Grid key={i.class} item xs = {1} md = {3} lg = {12} xl = {12} ><a target="_blank" rel="noreferrer" href={i.link}><Icon className={i.class}></Icon></a></Grid>)
+                            social.social.map(i => <Grid key={i.class} item xs = {2} md = {3} lg = {12} xl = {12} ><a target="_blank" rel="noreferrer" href={i.link}><Icon className={i.class}></Icon></a></Grid>)
                         }
                     </Grid>
                 </Grid>

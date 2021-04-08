@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
     return (
         <>
             <Box id="projects">
-                <ProjectTitleSection>
+                <ProjectTitleSection className="d-flex flex-column align-items-start flex-md-row">
                     <Text color={theme.colors?.main} fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>
                         {projects.title}
                     </Text>
