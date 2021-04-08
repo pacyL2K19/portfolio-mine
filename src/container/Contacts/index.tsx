@@ -73,7 +73,7 @@ const Contacts: React.FC = () => {
                 <div style={{height: 0.5, margin: "150px 0 35px 0", backgroundColor: "#DFE1E6"}}></div>
                 <div className="d-flex align-items-center justify-content-center">
                     {
-                        social.social.map(i => <h2 style={{color: "#505F79", fontSize: 20}} className="mx-3" key={i.class}><i className={i.class}></i></h2>)
+                        social.social.map(i => <h2 className="mx-3" key={i.class}><a href={i.link} target="_blank" rel="noreferrer"><i style={{color: "#505F79", fontSize: 20}} className={i.class}></i></a></h2>)
                     }
                 </div>
             </Container>
