@@ -1,15 +1,20 @@
 import React from "react";
 import { theme } from "../../core/theme";
+import { Col, Row } from "react-bootstrap";
 
 interface Props {
     SkillsItems: string[]
 }
 const Skills: React.FC<Props> = (props: Props) => {
     return (
-        <div style={{ display: "flex", flexDirection: "row"}}>
+        <Row style={{ display: "flex", flexDirection: "row"}}>
             {
                 props.SkillsItems.map(skill => (
-                    <div
+                    <Col
+                        sm={"3"}
+                        xs={"3"}
+                        md={"3"}
+                        lg={"3"}
                         key={skill}
                         style={{
                             padding: 5,
@@ -19,10 +24,10 @@ const Skills: React.FC<Props> = (props: Props) => {
                         }}
                     >
                         {skill}
-                    </div>
+                    </Col>
                 ))
             }
-        </div>
+        </Row>
     );
 };
 

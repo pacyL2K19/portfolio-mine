@@ -10,10 +10,12 @@ export const Icon = styled.i`
 `;
 
 export const Profile = styled.div`
-    /* height: 250px;
-    width: 250px;
-    border-radius: 125px;
-    box-shadow: 0 0 30px white; */
+    @media only screen and (max-width: 425px) {
+        img {
+            height: 200px !important;
+            margin-top: 25px;
+        }
+    }
 `;
 
 export const Text = styled.h2<Texts>`

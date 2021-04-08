@@ -11,8 +11,8 @@
     },
     "projects": {
         "main-project": {
-            "image": "fade-right",
-            "description-bloc": "fade-left",
+            "image": "zoom-in",
+            "description-bloc": "zoom-in",
             "duration": "700"
         },
         "projects": {

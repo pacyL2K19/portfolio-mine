@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import Button from "../../components/Button";
 import { theme } from "../../core/theme";
 import animations from "../../helper/animations.json";
+import { ImageContainer } from "./styled";
 
 const MainProject: React.FC = () => {
     return (
@@ -13,23 +14,16 @@ const MainProject: React.FC = () => {
                 <Row style={{justifyContent: "space-around"}}>
                     <Col
                         lg={7}
-                        style=
-                            {{
-                                height: 500,
-                                backgroundColor: theme.colors?.activeBtn,
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                padding: "auto 200px"
-                            }}
                         data-aos={animations.projects["main-project"].image}
                         data-aos-duration={animations.projects["main-project"].duration}
                         data-aos-anchor-placement="center-bottom"
                     >
-                        <Image
-                            src={projects.projects[0].imgUrl}
-                            fluid
-                        />
+                        <ImageContainer>
+                            <Image
+                                src={projects.projects[0].imgUrl}
+                                fluid
+                            />
+                        </ImageContainer>
                     </Col>
                     <Col
                         data-aos={animations.projects["main-project"]["description-bloc"]}
@@ -39,7 +33,7 @@ const MainProject: React.FC = () => {
                     >
                         <Row>
                             <Col lg={"12"}>
-                                <p className="h1" style={{color: theme.colors?.main}}>{ projects.projects[0].title }</p>
+                                <p className="h1 my-3" style={{color: theme.colors?.main}}>{ projects.projects[0].title }</p>
                                 <div style={{height: 1, margin: "50px 0", backgroundColor: theme.colors?.activeBtn, width: "100%"}}></div>
                             </Col>
                             <Col lg={"12"}>
@@ -48,11 +42,11 @@ const MainProject: React.FC = () => {
                             <Col lg={"12"}>
                                 <Skills SkillsItems={projects.projects[0].techs} />
                             </Col>
-                            <Col>
-                                <Button title = "Live version" icon="fas fa-eye" />
+                            <Col xs={"7"} sm={"6"}>
+                                <a href={projects.projects[0].live_link} target="_blank" rel="noreferrer"><Button title = "Live version" icon="fas fa-eye" /></a>
                             </Col>
-                            <Col>
-                                <Button title = "Source code" icon="fab fa-github" />
+                            <Col xs={"7"} sm={"6"}>
+                                <a href={projects.projects[0].github_link} target="_blank" rel="noreferrer"><Button title = "Source code" icon="fab fa-github" /></a>
                             </Col>
                         </Row>
                     </Col>

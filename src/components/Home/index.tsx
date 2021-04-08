@@ -11,7 +11,7 @@ const Home : React.FC<Home> = (props: Home) => {
         <Box> 
             <Grid
                 container
-                className="align-items-center"
+                className="align-items-center px-3"
             >
                 <Grid
                     item
@@ -20,9 +20,9 @@ const Home : React.FC<Home> = (props: Home) => {
                     lg = {1}
                     xs = {12}
                 >
-                    <Grid container>
+                    <Grid className="my-3" container>
                         {
-                            social.social.map(i => <Grid key={i.class} item xs = {3} md = {3} lg = {12} xl = {12} ><Icon className={i.class}></Icon></Grid>)
+                            social.social.map(i => <Grid key={i.class} item xs = {2} md = {3} lg = {12} xl = {12} ><a target="_blank" rel="noreferrer" href={i.link}><Icon className={i.class}></Icon></a></Grid>)
                         }
                     </Grid>
                 </Grid>
@@ -76,6 +76,7 @@ const Home : React.FC<Home> = (props: Home) => {
                         data-aos-anchor-placement="center-bottom"
                     >
                         <img
+                            className=""
                             src={profile}
                             alt=" Pacifique Linjanja "
                             style={{height: 500}}
