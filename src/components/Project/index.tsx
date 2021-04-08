@@ -10,7 +10,7 @@ interface Props {
 const Project: React.FC<Props> = (props: Props) => {
     return (
         <div style={{padding: "20px 10px", borderColor: theme.colors?.activeBtn, borderWidth: 2, borderStyle: "solid"}}>
-            <ProjectBox
+            <a href={props.project.github_link} ><ProjectBox
                 key={props.project.id}
                 style={{
                     backgroundImage : "url("+props.project.imgUrl+")",
@@ -76,7 +76,7 @@ const Project: React.FC<Props> = (props: Props) => {
                 <div className="button" style={{ padding: 10, display: "none" }}>
                     <i className="fas fa-eye"></i> See Project
                 </div>
-            </ProjectBox>
+            </ProjectBox></a>
         </div>
     );
 };

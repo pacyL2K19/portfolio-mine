@@ -64,5 +64,6 @@ type Project = {
     title: string,
     description?: string,
     techs?: string[],
-    id: number
+    id: number,
+    github_link?: string
 }
