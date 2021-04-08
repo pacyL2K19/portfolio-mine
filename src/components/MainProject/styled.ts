@@ -7,9 +7,9 @@ export const ImageContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     @media only screen and (max-width: 425px) {
-        height: 200px;
+        height: 250px;
     }
 `;

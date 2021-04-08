@@ -42,8 +42,9 @@ const About: React.FC = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col  className="d-flex align-items-center justify-content-center">
+                    <Col  className="d-sm-flex d-none align-items-center justify-content-center">
                         <Profile
+                        
                             data-aos={animations.about.image}
                             data-aos-duration={animations.about["image-duration"]}
                             data-aos-anchor-placement="center-bottom"
