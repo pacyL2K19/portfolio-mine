@@ -1,18 +1,17 @@
-import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import { Text } from "../../components/Home/styled";
-import { theme } from '../../core/theme';
+import { theme } from "../../core/theme";
 import { Box } from "./styled";
 import about from "../../helper/about.json";
 import Button from "../../components/Button";
-import profile from '../../assets/down.png';
-import { Profile } from '../../components/Home/styled';
-interface Props {
+import profile from "../../assets/down.png";
+import { Profile } from "../../components/Home/styled";
+import animations from "../../helper/animations.json";
 
-}
-const About: React.FC<Props> = () => {
+const About: React.FC = () => {
     return (
-        <Box>
+        <Box id="about">
             <Container fluid>
                 <Row style={{padding: "0px 3%"}}  className="d-flex align-items-center justify-content-center">
                     <Col>
@@ -27,8 +26,8 @@ const About: React.FC<Props> = () => {
                         <div style={{height: 0.5, margin: "35px 0", backgroundColor: "#fff", width: "50%"}}></div>
                         <Text
                             className="mt-5 mb-0"
-                            data-aos="zoom-in"
-                            data-aos-duration="700"
+                            data-aos={animations.about.description}
+                            data-aos-duration={animations.about["description-duration"]}
                             fontSize={theme.fonts?.subtitle.fontSize}
                             fontFamilly={theme.fonts?.title.fontFamilly}
                             color={theme.colors?.mainText}
@@ -45,8 +44,8 @@ const About: React.FC<Props> = () => {
                     </Col>
                     <Col  className="d-flex align-items-center justify-content-center">
                         <Profile
-                            data-aos="zoom-in-up"
-                            data-aos-duration="1100"
+                            data-aos={animations.about.image}
+                            data-aos-duration={animations.about["image-duration"]}
                             data-aos-anchor-placement="center-bottom"
                         >
                             <img
@@ -63,13 +62,31 @@ const About: React.FC<Props> = () => {
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.languages.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Languages</p>
                         {
                             about.skills.languages.techs.map((language) => (
-                                <p key = {language} data-aos="flip-right" data-aos-duration="700" style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {language}</p>
+                                <p
+                                    key = {language}
+                                    data-aos={animations.about.languages.name}
+                                    data-aos-duration={animations.about.languages.duration}
+                                    style={{
+                                        color: theme.colors?.mainText
+                                    }}
+                                >
+                                    <i
+                                        className="fas fa-angle-right"
+                                        style={{
+                                            color: theme.colors?.activeBtn,
+                                            marginRight: 10
+                                        }}
+                                    ></i> 
+                                    {language}
+                                </p>
                             ))
                         }
                     </Col>
                     <Col lg = {"4"}>
                         <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.frameWorks.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Frameworks</p>
-                        <div data-aos="zoom-in">
+                        <div
+                            data-aos={animations.about.frameworks.name}
+                        >
                             {
                                 about.skills.frameWorks.techs.map((framework) => (
                                     <p key = {framework} style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {framework}</p>
@@ -78,17 +95,29 @@ const About: React.FC<Props> = () => {
                         </div>
                     </Col>
                     <Col lg = {"4"}>
-                        <p style={{color: theme.colors?.mainText, fontSize: 28, fontWeight: "bold"}}><i className={about.skills.skills.icon} style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> Tools</p>
+                        <p style={{
+                            color: theme.colors?.mainText,
+                            fontSize: 28, fontWeight: "bold"
+                        }}>
+                            <i 
+                                className={about.skills.skills.icon}
+                                style={{
+                                    color: theme.colors?.activeBtn,
+                                    marginRight: 10
+                                }}
+                            ></i>
+                            Tools
+                        </p>
                         {
                             about.skills.skills.techs.map((skill) => (
-                                <p key={skill} data-aos="flip-left" data-aos-duration="700" style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {skill}</p>
+                                <p key={skill} data-aos={animations.about.tools.name} data-aos-duration={animations.about.tools.duration} style={{color: theme.colors?.mainText}}><i className="fas fa-angle-right" style={{color: theme.colors?.activeBtn, marginRight: 10}}></i> {skill}</p>
                             ))
                         }
                     </Col>
                 </Row>
             </Container>
         </Box>
-    )
-}
+    );
+};
 
 export default About;

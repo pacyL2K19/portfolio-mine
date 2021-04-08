@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { theme } from '../../core/theme';
-import { Nav, Navbar} from 'react-bootstrap';
+import React, { useState } from "react";
+import { theme } from "../../core/theme";
+import { Nav, Navbar} from "react-bootstrap";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,17 +12,17 @@ const Menu: React.FC<Props> = (props: Props) => {
 
     const handleScroll = () => {
         if (window.scrollY >= 65) {
-            setNavBackground(true)
+            setNavBackground(true);
         } else {
-            setNavBackground(false)
+            setNavBackground(false);
         }
-    }
+    };
 
-    document.addEventListener('scroll', handleScroll);
+    document.addEventListener("scroll", handleScroll);
 
     return (
         <>
-            <Navbar sticky='top' collapseOnSelect expand="md" style ={{transition: '1s ease', backgroundColor: navBackground ? theme.colors?.navBgcol : 'transparent'}} variant="dark">
+            <Navbar sticky='top' collapseOnSelect expand="md" style ={{transition: "1s ease", backgroundColor: navBackground ? theme.colors?.navBgcol : "transparent"}} variant="dark">
                 <Navbar.Brand href="#home">Pacifique Linjanja</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -36,7 +36,7 @@ const Menu: React.FC<Props> = (props: Props) => {
                 </Navbar.Collapse>
             </Navbar>
         </>
-    )
-}
+    );
+};
 
-export default Menu
+export default Menu;

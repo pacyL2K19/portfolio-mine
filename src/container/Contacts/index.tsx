@@ -1,22 +1,19 @@
-import React, { useState } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import { Text, Box } from "./styled";
 import data from "../../helper/contacts.json";
-import homeData from "../../helper/header.json";
-import TextField from '@material-ui/core/TextField';
+import social from "../../helper/social.json";
+import TextField from "@material-ui/core/TextField";
 import Button from "../../components/Button";
 
-interface Props {
 
-}
-
-const Contacts: React.FC<Props> = () => {
+const Contacts: React.FC = () => {
     const [firstName, setFIrstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [message, setMessage] = useState(data.sample);
     const [email, setEmail] = useState("");
     return (
-        <Box>
+        <Box id="contacts">
             <Container fluid>
                 <Row className="d-flex align-items-center justify-content-center">
                     <Col lg={"4"} className="px-5">
@@ -70,18 +67,18 @@ const Contacts: React.FC<Props> = () => {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         />
-                        <Button title={data['button-title']} />
+                        <Button title={data["button-title"]} />
                     </Col>
                 </Row>
                 <div style={{height: 0.5, margin: "150px 0 35px 0", backgroundColor: "#DFE1E6"}}></div>
                 <div className="d-flex align-items-center justify-content-center">
                     {
-                        homeData.icons.map(i => <h2 style={{color: "#505F79", fontSize: 20}} className="mx-3" key={i.class}><i className={i.class}></i></h2>)
+                        social.social.map(i => <h2 style={{color: "#505F79", fontSize: 20}} className="mx-3" key={i.class}><i className={i.class}></i></h2>)
                     }
                 </div>
             </Container>
         </Box>
-    )
-}
+    );
+};
 
-export default Contacts
+export default Contacts;

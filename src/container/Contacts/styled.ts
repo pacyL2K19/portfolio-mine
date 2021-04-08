@@ -9,4 +9,4 @@ export const Text = styled.h2`
 export const Box = styled.div`
     padding: 100px 5% 30px 5%;
     background-color: white;
-`
+`;

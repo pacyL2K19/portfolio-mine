@@ -12,4 +12,4 @@ export const ButtonBox = styled.div`
     align-items: center;
     background-color: ${colors.activeBtn};
     justify-content: space-around
-`
+`;

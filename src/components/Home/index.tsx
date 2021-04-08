@@ -1,9 +1,10 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import { Box, Icon, Profile, Text } from './styled';
-import data from '../../helper/header.json';
-import { theme } from '../../core/theme';
-import profile from '../../assets/img.png';
+import React from "react";
+import { Grid } from "@material-ui/core";
+import { Box, Icon, Profile, Text } from "./styled";
+import social from "../../helper/social.json";
+import { theme } from "../../core/theme";
+import profile from "../../assets/img.png";
+import animations from "../../helper/animations.json";
 
 const Home : React.FC<Home> = (props: Home) => {
     return (
@@ -21,7 +22,7 @@ const Home : React.FC<Home> = (props: Home) => {
                 >
                     <Grid container>
                         {
-                            data.icons.map(i => <Grid key={i.class} item xs = {3} md = {3} lg = {12} xl = {12} ><Icon className={i.class}></Icon></Grid>)
+                            social.social.map(i => <Grid key={i.class} item xs = {3} md = {3} lg = {12} xl = {12} ><Icon className={i.class}></Icon></Grid>)
                         }
                     </Grid>
                 </Grid>
@@ -33,24 +34,24 @@ const Home : React.FC<Home> = (props: Home) => {
                     xs = {12}
                 >
                     <Text
-                        data-aos="fade-down"
-                        data-aos-duration="700"
+                        data-aos={animations.home["introduction-text"]}
+                        data-aos-duration={animations.home["duration-intro"]}
                         data-aos-anchor-placement="center-bottom"
                         color={theme.colors?.titleText}
                         fontSize={theme.fonts?.title.fontSize}
                         fontFamilly={theme.fonts?.title.fontFamilly}
                     >{props.main}</Text>
                     <Text
-                        data-aos="fade-left" 
-                        data-aos-duration="850"
+                        data-aos={animations.home["title-text"]}
+                        data-aos-duration={animations.home["duration-title"]}
                         data-aos-anchor-placement="center-bottom"
                         color={theme.colors?.mainText}
                         fontSize={theme.fonts?.secondary.fontSize}
                         fontFamilly={theme.fonts?.secondary.fontFamilly}
                     >{props.title}</Text>
                     <Text
-                        data-aos="fade-right"
-                        data-aos-duration="1100"
+                        data-aos={animations.home["description-text"]}
+                        data-aos-duration={animations.home["duration-description"]}
                         data-aos-anchor-placement="center-bottom"
                         color={theme.colors?.mainText}
                         fontSize={theme.fonts?.primary.fontSize}
@@ -64,14 +65,14 @@ const Home : React.FC<Home> = (props: Home) => {
                     lg = {5}
                     xs = {12}
                     style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center'
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
                     }}
                 >
                     <Profile
-                        data-aos="zoom-in-up"
-                        data-aos-duration="1100"
+                        data-aos={animations.home.image}
+                        data-aos-duration={animations.home["duration-description"]}
                         data-aos-anchor-placement="center-bottom"
                     >
                         <img
@@ -83,7 +84,7 @@ const Home : React.FC<Home> = (props: Home) => {
                 </Grid>
             </Grid>
         </Box>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

@@ -1,0 +1,45 @@
+{
+    "home": {
+        "introduction-text": "fade-down",
+        "title-text": "fade-left",
+        "description-text": "fade-right",
+        "image": "zoom-in-up",
+        "icons": "",
+        "duration-title": "850",
+        "duration-intro": "700",
+        "duration-description": "1100"
+    },
+    "projects": {
+        "main-project": {
+            "image": "fade-right",
+            "description-bloc": "fade-left",
+            "duration": "700"
+        },
+        "projects": {
+            "project-box": "zoom-in-up",
+            "skills-box": "fade-down",
+            "duration": "700"
+        },
+        "duration": ""
+    },
+    "about": {
+        "description": "zoom-in",
+        "image": "zoom-in-up",
+        "image-duration": "1100",
+        "description-duration": "700",
+        "languages": {
+            "name": "flip-right",
+            "duration": "700"
+        },
+        "frameworks": {
+            "name": "zoom-in"
+        },
+        "tools": {
+            "name": "flip-left",
+            "duration": "700"
+        }
+    },
+    "contacts": {
+
+    }
+}

@@ -20,4 +20,4 @@ export const secondaryFonts: Fonts ={
     fontFamilly: "String",
     fontSize: "18px",
     fontWeight: "String"
-}
+};

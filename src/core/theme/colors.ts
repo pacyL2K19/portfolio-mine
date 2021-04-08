@@ -9,4 +9,4 @@ export const colors: Colors = {
     titleText: "#F55800",
     navBgcol: "#3E3C3C",
     menuLinks: "#d0d6d4"
-}
+};
