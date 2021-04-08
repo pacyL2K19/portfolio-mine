@@ -43,12 +43,13 @@ const Project: React.FC<Props> = (props: Props) => {
                             borderRadius: "0 30px 30px 0",                            
                         }}>{props.project.title}
                     </h3>
-                    <p style={{color: "white", fontSize: 18, marginTop: 120, padding: 30}}>{props.project.description}</p>
+                    <p style={{color: "white", fontSize: 18, marginTop: 100, padding: 30}}>{props.project.description}</p>
                     <Container style={{ position: "absolute", bottom: 20 }}>
                         <Row>
                             {
                                 props.project.techs?.slice(0, 3).map(skill => (
                                     <Col
+                                        className="my-1"
                                         key={skill}
                                         lg={"4"}
                                         data-aos={animations.projects.projects["skills-box"]}
