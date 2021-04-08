@@ -76,6 +76,7 @@ const Home : React.FC<Home> = (props: Home) => {
                         data-aos-anchor-placement="center-bottom"
                     >
                         <img
+                            className=""
                             src={profile}
                             alt=" Pacifique Linjanja "
                             style={{height: 500}}
