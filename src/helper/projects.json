@@ -5,7 +5,7 @@
             "id": 1,
             "title": "Dahlia asbl",
             "description": "Dahlia asbl is a non profit association web site built in React. Whith Dahlia, you can make a donation throught PayPal, Visa card or Mastercard. Dahlia web  site is bilingual",
-            "live_link": "www.dahlia-asbl.org",
+            "live_link": "https://www.dahlia-asbl.org",
             "github_link": "https://github.com/pacyL2K19/dahlia-asbl",
             "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1614292731/dahliaPr_emraom.png",
             "techs": [
