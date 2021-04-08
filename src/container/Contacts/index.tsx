@@ -12,6 +12,9 @@ const Contacts: React.FC = () => {
     const [lastName, setLastName] = useState("");
     const [message, setMessage] = useState(data.sample);
     const [email, setEmail] = useState("");
+    const handleSubmit = () => {
+        console.log("ok");
+    };
     return (
         <Box id="contacts">
             <Container fluid>
@@ -67,7 +70,7 @@ const Contacts: React.FC = () => {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         />
-                        <Button title={data["button-title"]} />
+                        <a onClick={() => handleSubmit}><Button title={data["button-title"]} /></a>
                     </Col>
                 </Row>
                 <div style={{height: 0.5, margin: "150px 0 35px 0", backgroundColor: "#DFE1E6"}}></div>
