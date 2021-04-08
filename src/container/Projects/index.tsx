@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
                 <Container style={{marginTop: 40}}>
                     <Row>
                         {
-                            projects.projects.map(pro => (
+                            projects.projects.slice(1, projects.projects.length).map(pro => (
                                 <Col
                                     key={pro.id}
                                     data-aos={animations.projects.projects["project-box"]}

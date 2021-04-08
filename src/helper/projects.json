@@ -18,9 +18,20 @@
             "description": "MagoEat is an online restaurant that allows users to order from their prefered restaurants, built in React Native, It has Android and iOS versions in French",
             "live_link": "#",
             "github_link": "https://github.com/pacyL2K19/magoEatProd",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1609359968/Italian_food_n4zsrw.jpg",
+            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617840441/Screenshot_20210404-183454_yprv9v.png",
             "techs": [
-                "Javascript", "React N", "Joi", "JSX"
+                "Javascript", "React N", "JSX"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Dashboard Covid",
+            "description": "This project is about monitoring covid19 desease in DRC, managing health zones, updating dayly situation, Official dashboard of the Ministry of Health",
+            "live_link": "http://www.stopcoronavirusrdc.info/",
+            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617842609/Screenshot_from_2021-02-17_15-13-54_uhmuxm.png",
+            "github_link": "https://github.com/DRC-COVID19/stopcoronavirus.cd",
+            "techs": [
+                "VueJx", "Laravel", "Php", "PostegreSql", "Eloquent"
             ]
         },
         {
@@ -36,35 +47,35 @@
         },
         {
             "id": 4,
-            "title": "Horizon Travel Plus",
-            "description": "Horizon Travel Plus is a travel agency, this web site is built in PHP and allows users to contact the compony and reserve places in holtels, air planes, ... for different reasons",
-            "live_link": "www.horizontravelplus.com",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1614292731/dahliaPr_emraom.png",
-            "github_link": "https://github.com/pacyL2K19/horizontravelplus",
-            "techs": [
-                "HTML5", "CSS3", "PHP"
-            ]
-        },
-        {
-            "id": 5,
-            "title": "MagoEat Backend",
-            "description": "THis is the backend project built with ExpressJs, Mongodb and Mongoose as the ORM. This app makes the frontend Mobile App dynamic and connects it to the datanase",
+            "title": "e-CREDDHO",
+            "description": "A Humanitarian Research Center mobile application for collecting data and chat feature with administrators and other users",
             "live_link": "#",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1614292731/dahliaPr_emraom.png",
-            "github_link": "https://github.com/pacyL2K19/magoEat-BackendV1",
+            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617841563/login_plvs94.jpg",
+            "github_link": "https://github.com/nkpremices/ms-creddho-mobile",
             "techs": [
-                "Javascript", "NodeJs", "ExpressJs", "MongoDB", "Joi validation"
+                "React N", "Javascript", "Jsx"
             ]
         },
         {
             "id": 6,
-            "title": "Horizon Travel Plus",
-            "description": "Horizon Travel Plus is a travel agency, this web site is built in PHP and allows users to contact the compony and reserve places in holtels, air planes, ... for different reasons",
-            "live_link": "www.horizontravelplus.com",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1614292731/dahliaPr_emraom.png",
-            "github_link": "https://github.com/pacyL2K19/horizontravelplus",
+            "title": "MagoEat Presentation",
+            "description": "A single page web site where users can find links to directly download MagoEat applications for both Android and iOS",
+            "live_link": "https://pacyl2k19.github.io/magoeat-single-page-presentation/",
+            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617842102/dashmafgoeat_j2jltb.png",
+            "github_link": "https://github.com/pacyL2K19/magoeat-single-page-presentation",
             "techs": [
-                "HTML5", "CSS3", "PHP"
+                "React", "Jsx", "AOS"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "MagoEat Dashboard",
+            "description": "The Dashboard of administrators of MagoEat Applicationm, that allows administrators to add Restaurant, accept orders, assign delivers, ...",
+            "live_link": "https://pacyl2k19.github.io/magoeat-single-page-presentation/",
+            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617842527/dashboard_hm063i.png",
+            "github_link": "https://github.com/pacyL2K19/magoeat-dashboard",
+            "techs": [
+                "React", "Jsx", "AOS"
             ]
         }
     ]
