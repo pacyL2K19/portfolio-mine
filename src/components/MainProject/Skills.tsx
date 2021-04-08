@@ -21,6 +21,7 @@ const Skills: React.FC<Props> = (props: Props) => {
                             border: "1px solid #ff7b00",
                             margin: 10,
                             color: theme.colors?.main,
+                            textAlign: "center"
                         }}
                     >
                         {skill}

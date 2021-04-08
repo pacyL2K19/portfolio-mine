@@ -10,7 +10,7 @@ import { ImageContainer } from "./styled";
 const MainProject: React.FC = () => {
     return (
         <>
-            <Container fluid>
+            <Container fluid className="d-flex align-items-center">
                 <Row style={{justifyContent: "space-around"}}>
                     <Col
                         lg={7}
@@ -33,7 +33,7 @@ const MainProject: React.FC = () => {
                     >
                         <Row>
                             <Col lg={"12"}>
-                                <p className="h1 my-3" style={{color: theme.colors?.main}}>{ projects.projects[0].title }</p>
+                                <p className="h1 my-3 my-md-0" style={{color: theme.colors?.main}}>{ projects.projects[0].title }</p>
                                 <div style={{height: 1, margin: "50px 0", backgroundColor: theme.colors?.activeBtn, width: "100%"}}></div>
                             </Col>
                             <Col lg={"12"}>
