@@ -13,8 +13,7 @@ export const Profile = styled.div`
     @media only screen and (max-width: 425px) {
         img {
             height: 200px !important;
-            /* bottom: 0;
-            right: 0 */
+            margin-top: 25px;
         }
     }
 `;
