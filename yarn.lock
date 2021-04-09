@@ -6037,7 +6037,7 @@
   dependencies:
     "postcss" "^7.0.14"
 
-"identity-obj-proxy@3.0.0":
+"identity-obj-proxy@^3.0.0", "identity-obj-proxy@3.0.0":
   "integrity" "sha1-lNK9qWCERT7zb7xarsN+D3nx/BQ="
   "resolved" "https://registry.npmjs.org/identity-obj-proxy/-/identity-obj-proxy-3.0.0.tgz"
   "version" "3.0.0"
