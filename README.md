@@ -94,8 +94,64 @@ social : Social[] // just a representation
 - **`src/core/theme/fonts.ts`** : change `font-size` and `font-familly` for `titles`, `sub-title`, ...
 ## The Default Design
 
-## Project structure
+Main screenshots 
 
+![screenshot](screenshots/oneDESK.png)
+- Main project
+![screenshot](screenshots/twoDESK.png)
+- Other projects 
+![screenshot](screenshots/threeDESK.png)
+- Footer
+![screenshot](screenshots/FIVEDESK.png)
+- Mobile version
+![screenshot](screenshots/mobilePort.png)
+## Project structure
+    |── node_modules (to be generated)
+    ├── public/
+        ├── favicon.ico
+        ├── index.html
+        ├── manifest.json
+        ├── robots.txt
+    ├── src/
+        ├── assets/
+            ├── Images
+        ├── components/
+            ├── Home/
+                ├── index.test.tsx
+                ├── index.tsx
+                ├── style.ts
+            ├── MainProject/ (same structure as the home)
+            ├── Menu/ (same structure as the home)
+            ├── Project/ (same structure as the home)
+            ├── styled.ts
+            ├── Button.txs
+        ├── container/
+            ├── About/
+                ├── index.test.tsx
+                ├── index.tsx
+                ├── style.ts
+            ├── Contacts (same structure as the About)
+            ├── Header/ (same structure as the About)
+            ├── Projects/ (same structure as the About)
+        ├── core/
+            ├── theme/
+                ├── colors.ts
+                ├── fonts.ts
+                ├── index.ts
+        ├── App.tsx
+        ├── index.css
+        ├── index.tsx
+        ├── types.d.ts
+    ├── screenshots/
+        ├── // Images 
+    ├── .gitignore
+    ├── config.js (to be recreated)
+    ├── config.sample.js
+    ├── package-lock.json
+    ├── yarn.lock
+    ├── package.json
+    ├── eslintrc.json
+    ├── README.md
 ## Contributing
 
 Feel free to contribute to the project by following a correct Git flow workflow: 
