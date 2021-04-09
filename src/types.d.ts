@@ -67,3 +67,10 @@ type Project = {
     id: number,
     github_link?: string
 }
+
+type Social = {
+    key: int,
+    for: string,
+    class: string,
+    link: string
+}
