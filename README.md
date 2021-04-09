@@ -98,5 +98,33 @@ Feel free to contribute to the project by following a correct Git flow workflow:
 - Create a meaningful names in this format `feature/feature-name`
 - Make local tests and remote tests before raising a PR 
 - Create a detailed PR with screenshots and short description, make sure each feature contains testing feature, correct syntax and easy to customize by other devs (the philosophy of the project)
-- For forked projects, recognize the author putting `Forked from ` [@pacyL2K19](https://github.com/pacyL2K19/portfolio-mine) `portfolio template` in the footer (set by default for you)
+- For forked projects, recognize the author putting `Forked from ` [@pacyL2K19](https://github.com/pacyL2K19/portfolio-mine) `portfolio template` in the footer (set by default for you :}) kindly don't remove it
 
+- These are next implemetation(Feel free to contribute):
+> - Multilanguage by creating our own dictionary 
+> - Dark / Light switch
+> - Add what you think I forgot as a contribution :eye
+
+
+## Author
+
+👤 **Pacifique Linjanja**
+
+- Github: [@pacyL2K19](https://github.com/pacyL2K19)
+- Twitter: [@PacifiqueLinja1](https://twitter.com/PacifiqueLinja1)
+- Linkedin: [Pacifique Linjanja](https://www.linkedin.com/in/pacifique-linjanja/)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/pacyL2K19/magoEat-BackendV1/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project! 
+
+## License
+
+This project is [MIT](lic.url) licensed.
