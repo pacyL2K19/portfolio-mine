@@ -1,10 +1,10 @@
 # Portfolio Template for Devs
 
-<!-- <p align="center">
+<p align="center">
 <a href="https://linkedin.com/in/pacifique-linjanja/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-pacifiquelinjanja-blue?style=flat-square&logo=linkedin"></a>
 <a href="https://www.instagram.com/linjanjapacifique/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-linjanjapacifique__-blue?style=flat-square&logo=instagram"></a>
 <a href="mailto:pacilinja2@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-pacilinja2@gmail.com-blue?style=flat-square&logo=Microsoft%20outlook"></a>
-</p> -->
+</p>
 
 > This is a Template based project with the  AIM to help developer to crate professional template for free and in a time records without dealing with deep codes
 
