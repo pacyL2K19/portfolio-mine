@@ -69,7 +69,7 @@ type Project = {
 }
 
 ```
-:warning Some of them are required, make sure all the projects contains required fields or you face errors on the running
+⚠️ Some of them are required, make sure all the projects contains required fields or you face errors on the running
 3. In the **`social.json`** file: An array of `Social` object following this schema below, fell free to put a number of social media you want in the actual array
 ```
 // src/types.d.ts
