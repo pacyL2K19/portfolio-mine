@@ -38,7 +38,9 @@ const About: React.FC = () => {
                         </Text>
                         <Row>
                             <Col lg = {"4"}>
-                                <Button title = "My Resume" icon="fas fa-file" />
+                                <a href={about.resumeUrl}>
+                                    <Button title = "My Resume" icon="fas fa-file" />
+                                </a>
                             </Col>
                         </Row>
                     </Col>
