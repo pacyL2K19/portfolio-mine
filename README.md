@@ -92,6 +92,10 @@ social : Social[] // just a representation
 6. Theming: colors and font ca be customized by updating values in these files
 - **`src/core/theme/colors.ts`** : change the `mainText` color, the `background`, ...
 - **`src/core/theme/fonts.ts`** : change `font-size` and `font-familly` for `titles`, `sub-title`, ...
+## The Default Design
+
+## Project structure
+
 ## Contributing
 
 Feel free to contribute to the project by following a correct Git flow workflow: 
@@ -115,11 +119,11 @@ Feel free to contribute to the project by following a correct Git flow workflow:
 - Linkedin: [Pacifique Linjanja](https://www.linkedin.com/in/pacifique-linjanja/)
 
 
-## 🤝 Contributing
+## 🤝 
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/pacyL2K19/magoEat-BackendV1/issues).
+Feel free to check the [issues page](https://github.com/pacyL2K19/portfolio-mine/issues).
 
 ## Show your support
 
