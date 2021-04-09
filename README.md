@@ -11,7 +11,7 @@
 ## Description
 ### Tech Stack 
 This project is based in these main tech stacks : 
-- ReactJS 
+- ReactJS - styled-components - data-aos 
 - Typescript
 - React Bootstrap
 - Material UI 
@@ -50,11 +50,11 @@ At this point you should be able to get a the project running in the default web
 1. Favicon : Feel free to change the actual `favicon.ico` file 
 2. Update the content : 
 > - In the `helper/` folder, change couple of word by yours
-> > - `header.json`: the content of the header section, feel free to change the name and the description 
+> > - **`header.json`**: the content of the header section, feel free to change the name and the description 
 > > - In the same file, you can change the items of the navbar, the way they are named for example from `Portfolio` to `Home`
-> - In the `projects.json` file : Customize the list of featured projects 
+> - In the **`projects.json`** file : Customize the list of featured projects 
 > > - Images are url links, feel free to use any platform of choice to store them, for my case I used [Cloudinary](https://cloudinary.com/) but Goole Drive or any cloud plateform can be used
-> > - Add `live links` (if available) and `Github links` if not availbale, just put the default one `#` 
+> > - Add **`live links`** (if available) and `Github links` if not availbale, just put the default one `#` 
 > > - In globlal, this is the schema of each project: :down
 ```
 // src/types.d.ts
@@ -70,7 +70,7 @@ type Project = {
 
 ```
 :warning Some of them are required, make sure all the projects contains required fields or you face errors on the running
-3. In the `social.json` file: An array of `Social` object following this schema below, fell free to put a number of social media you want in the actual array
+3. In the **`social.json`** file: An array of `Social` object following this schema below, fell free to put a number of social media you want in the actual array
 ```
 // src/types.d.ts
 
@@ -86,5 +86,17 @@ type Social = {
 social : Social[] // just a representation
 
 ```
-4. In the `about.json` file: customize text, add most used `languages`, `frameworks` and `tools` in corresponding arrays
+4. In the **`about.json`** file: customize text, add most used `languages`, `frameworks` and `tools` in corresponding arrays
+5. In the **`animations.json`** file, customize animation effects for each section and subsection, make sure you put correct names as the [data-aos](https://michalsnik.github.io/aos/) Doc specifies it, duration and delay can be customized as well
+5. In the **`contacts.json`** file, customize texts to be displayed as well
+6. Theming: colors and font ca be customized by updating values in these files
+- **`src/core/theme/colors.ts`** : change the `mainText` color, the `background`, ...
+- **`src/core/theme/fonts.ts`** : change `font-size` and `font-familly` for `titles`, `sub-title`, ...
 ## Contributing
+
+Feel free to contribute to the project by following a correct Git flow workflow: 
+- Create a meaningful names in this format `feature/feature-name`
+- Make local tests and remote tests before raising a PR 
+- Create a detailed PR with screenshots and short description, make sure each feature contains testing feature, correct syntax and easy to customize by other devs (the philosophy of the project)
+- For forked projects, recognize the author putting `Forked from ` [@pacyL2K19](https://github.com/pacyL2K19/portfolio-mine) `portfolio template` in the footer (set by default for you)
+

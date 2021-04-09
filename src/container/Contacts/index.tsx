@@ -79,6 +79,15 @@ const Contacts: React.FC = () => {
                         social.social.map(i => <h2 className="mx-3" key={i.class}><a href={i.link} target="_blank" rel="noreferrer"><i style={{color: "#505F79", fontSize: 20}} className={i.class}></i></a></h2>)
                     }
                 </div>
+                <div className="d-flex align-items-center justify-content-center">
+                    {
+                        social.social[0].link === "https://github.com/pacyL2K19" ? (
+                            <p></p>
+                        ) : (
+                            <p>Forked from <a href="https://github.com/pacyL2K19/portfolio-mine">@pacyL2K19 </a> portfolio template</p>
+                        )
+                    }
+                </div>
             </Container>
         </Box>
     );
