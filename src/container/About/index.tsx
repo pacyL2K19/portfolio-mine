@@ -38,7 +38,7 @@ const About: React.FC = () => {
                         </Text>
                         <Row>
                             <Col lg = {"4"}>
-                                <a href={about.resumeUrl}>
+                                <a href={about.resumeUrl} target="_blank" rel="noreferrer">
                                     <Button title = "My Resume" icon="fas fa-file" />
                                 </a>
                             </Col>
