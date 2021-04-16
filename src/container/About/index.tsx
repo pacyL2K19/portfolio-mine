@@ -54,7 +54,9 @@ const About: React.FC = () => {
                             <img
                                 src={profile}
                                 alt=" Pacifique Linjanja "
-                                style={{height: 500}}
+                                style={{
+                                    height: 500
+                                }}
                             />
                         </Profile>
                     </Col>
