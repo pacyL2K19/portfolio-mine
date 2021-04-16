@@ -1,0 +1,13 @@
+{
+    "navbar-items": [
+        "Portfolio",
+        "Projects",
+        "About",
+        "Contacts"
+    ],
+    "texts": {
+        "main": "Hey There, I am Pacifique",
+        "title": "I am a Fullstack Software Engineer",
+        "intro": "I have ability of building frontend applications and backend applications with the most excited technologies. Let help you or your company building software solutions, don't hesitate to contact me"
+    }
+}
