@@ -53,9 +53,9 @@ At this point you should be able to get a the project running in the default web
 > > - **`header.json`**: the content of the header section, feel free to change the name and the description 
 > > - In the same file, you can change the items of the navbar, the way they are named for example from `Portfolio` to `Home`
 > - In the **`projects.json`** file : Customize the list of featured projects 
-> > - Images are url links, feel free to use any platform of choice to store them, for my case I used [Cloudinary](https://cloudinary.com/) but Goole Drive or any cloud plateform can be used
-> > - Add **`live links`** (if available) and `Github links` if not availbale, just put the default one `#` 
-> > - In globlal, this is the schema of each project: :down
+> > * Images are url links, feel free to use any platform of choice to store them, for my case I used [Cloudinary](https://cloudinary.com/) but Goole Drive or any cloud plateform can be used
+> > * Add **`live links`** (if available) and `Github links` if not availbale, just put the default one `#` 
+> > * In globlal, this is the schema of each project: :down
 ```
 // src/types.d.ts
 
