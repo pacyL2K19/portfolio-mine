@@ -9,35 +9,37 @@ import { Row, Col, Container } from "react-bootstrap";
 import animations from "../../helper/animations.json";
 
 const Projects: React.FC = () => {
-    return (
-        <>
-            <Box id="projects">
-                <ProjectTitleSection className="d-flex flex-column align-items-start flex-md-row">
-                    <Text color={theme.colors?.main} fontSize={theme.fonts?.title.fontSize} fontFamilly={theme.fonts?.title.fontFamilly}>
-                        {projects.title}
-                    </Text>
-                    <LineSeparator />
-                </ProjectTitleSection>
-                <MainProject />
-                <Container style={{marginTop: 40}}>
-                    <Row>
-                        {
-                            projects.projects.slice(1, projects.projects.length).map(pro => (
-                                <Col
-                                    key={pro.id}
-                                    data-aos={animations.projects.projects["project-box"]}
-                                    lg={"4"}
-                                >
-                                    <Project project={pro} />
-                                    <br />
-                                </Col>
-                            ))
-                        }
-                    </Row>
-                </Container>
-            </Box>  
-        </>
-    );
+  return (
+    <>
+      <Box id="projects">
+        <ProjectTitleSection className="d-flex flex-column align-items-start flex-md-row">
+          <Text
+            color={theme.colors?.main}
+            fontSize={theme.fonts?.title.fontSize}
+            fontFamilly={theme.fonts?.title.fontFamilly}
+          >
+            {projects.title}
+          </Text>
+          <LineSeparator />
+        </ProjectTitleSection>
+        <MainProject />
+        <Container style={{ marginTop: 40 }}>
+          <Row>
+            {projects.projects.slice(1, projects.projects.length).map((pro) => (
+              <Col
+                key={pro.id}
+                data-aos={animations.projects.projects["project-box"]}
+                lg={"4"}
+              >
+                <Project project={pro} />
+                <br />
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </Box>
+    </>
+  );
 };
 
 export default Projects;
