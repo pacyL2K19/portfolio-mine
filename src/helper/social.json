@@ -1,8 +1,28 @@
 {
-    "social": [
-        {"key": "0", "for": "Github", "class": "fab fa-github", "link": "https://github.com/pacyL2K19"},
-        {"key": "1", "for": "LinkedIn", "class": "fab fa-linkedin-in", "link": "https://www.linkedin.com/in/pacifique-linjanja/"},
-        {"key": "2", "for": "Twitter", "class": "fab fa-twitter", "link": "https://twitter.com/PacifiqueLinja1"},
-        {"key": "3", "for": "Stack Overflow", "class": "fab fa-stack-overflow", "link": "https://stackoverflow.com/users/10143792/pacyl-js"}
-    ]
+  "social": [
+    {
+      "key": "0",
+      "for": "Github",
+      "class": "fab fa-github",
+      "link": "https://github.com/pacyL2K19"
+    },
+    {
+      "key": "1",
+      "for": "LinkedIn",
+      "class": "fab fa-linkedin-in",
+      "link": "https://www.linkedin.com/in/pacifique-linjanja/"
+    },
+    {
+      "key": "2",
+      "for": "Twitter",
+      "class": "fab fa-twitter",
+      "link": "https://twitter.com/PacifiqueLinja1"
+    },
+    {
+      "key": "3",
+      "for": "Stack Overflow",
+      "class": "fab fa-stack-overflow",
+      "link": "https://stackoverflow.com/users/10143792/pacyl-js"
+    }
+  ]
 }
