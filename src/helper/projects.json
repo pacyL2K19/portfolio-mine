@@ -1,81 +1,74 @@
 {
-    "title": "My recent projects",
-    "projects": [{
-            "id": 1,
-            "title": "Dahlia asbl",
-            "description": "Dahlia asbl is a non profit association web site built in React. Whith Dahlia, you can make a donation throught PayPal, Visa card or Mastercard. Dahlia web  site is bilingual",
-            "live_link": "https://www.dahlia-asbl.org",
-            "github_link": "https://github.com/pacyL2K19/dahlia-asbl",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1614292731/dahliaPr_emraom.png",
-            "techs": [
-                "Javascript", "ReactJs", "NodeJs", "ExpressJs", "JSX"
-            ]
-        },
-        {
-            "id": 2,
-            "title": "MagoEat Frontend",
-            "description": "MagoEat is an online restaurant that allows users to order from their prefered restaurants, built in React Native, It has Android and iOS versions in French",
-            "live_link": "#",
-            "github_link": "https://github.com/pacyL2K19/magoEatProd",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617840441/Screenshot_20210404-183454_yprv9v.png",
-            "techs": [
-                "Javascript", "React N", "JSX"
-            ]
-        },
-        {
-            "id": 5,
-            "title": "Dashboard Covid",
-            "description": "This project is about monitoring covid19 desease in DRC, managing health zones, updating dayly situation, Official dashboard of the Ministry of Health",
-            "live_link": "http://www.stopcoronavirusrdc.info/",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617840810/covidDash_rn4bhj.png",
-            "github_link": "https://github.com/DRC-COVID19/stopcoronavirus.cd",
-            "techs": [
-                "VueJx", "Laravel", "Php", "PostegreSql", "Eloquent"
-            ]
-        },
-        {
-            "id": 3,
-            "title": "MagoEat Backend",
-            "description": "THis is the backend project built with ExpressJs, Mongodb and Mongoose as the ORM. This app makes the frontend Mobile App dynamic and connects it to the datanase",
-            "live_link": "#",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617231055/successGetListEnquete_qc06xm.png",
-            "github_link": "https://github.com/pacyL2K19/magoEat-BackendV1",
-            "techs": [
-                "Javascript", "NodeJs", "ExpressJs", "MongoDB", "Joi validation"
-            ]
-        },
-        {
-            "id": 4,
-            "title": "e-CREDDHO",
-            "description": "A Humanitarian Research Center mobile application for collecting data and chat feature with administrators and other users",
-            "live_link": "#",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617841563/login_plvs94.jpg",
-            "github_link": "https://github.com/nkpremices/ms-creddho-mobile",
-            "techs": [
-                "React N", "Javascript", "Jsx"
-            ]
-        },
-        {
-            "id": 6,
-            "title": "MagoEat Presentation",
-            "description": "A single page web site where users can find links to directly download MagoEat applications for both Android and iOS",
-            "live_link": "https://pacyl2k19.github.io/magoeat-single-page-presentation/",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617842102/dashmafgoeat_j2jltb.png",
-            "github_link": "https://github.com/pacyL2K19/magoeat-single-page-presentation",
-            "techs": [
-                "React", "Jsx", "AOS"
-            ]
-        },
-        {
-            "id": 7,
-            "title": "MagoEat Dashboard",
-            "description": "The Dashboard of administrators of MagoEat Applicationm, that allows administrators to add Restaurant, accept orders, assign delivers, ...",
-            "live_link": "https://pacyl2k19.github.io/magoeat-single-page-presentation/",
-            "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617842527/dashboard_hm063i.png",
-            "github_link": "https://github.com/pacyL2K19/magoeat-dashboard",
-            "techs": [
-                "React", "Jsx", "AOS"
-            ]
-        }
-    ]
+  "title": "My recent projects",
+  "projects": [
+    {
+      "id": 1,
+      "title": "Dahlia asbl",
+      "description": "Dahlia asbl is a non profit association web site built in React. Whith Dahlia, you can make a donation throught PayPal, Visa card or Mastercard. Dahlia web  site is bilingual",
+      "live_link": "https://www.dahlia-asbl.org",
+      "github_link": "https://github.com/pacyL2K19/dahlia-asbl",
+      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1614292731/dahliaPr_emraom.png",
+      "techs": ["Javascript", "ReactJs", "NodeJs", "ExpressJs", "JSX"]
+    },
+    {
+      "id": 2,
+      "title": "MagoEat Frontend",
+      "description": "MagoEat is an online restaurant that allows users to order from their prefered restaurants, built in React Native, It has Android and iOS versions in French",
+      "live_link": "#",
+      "github_link": "https://github.com/pacyL2K19/magoEatProd",
+      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617840441/Screenshot_20210404-183454_yprv9v.png",
+      "techs": ["Javascript", "React N", "JSX"]
+    },
+    {
+      "id": 5,
+      "title": "Dashboard Covid",
+      "description": "This project is about monitoring covid19 desease in DRC, managing health zones, updating dayly situation, Official dashboard of the Ministry of Health",
+      "live_link": "http://www.stopcoronavirusrdc.info/",
+      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617840810/covidDash_rn4bhj.png",
+      "github_link": "https://github.com/DRC-COVID19/stopcoronavirus.cd",
+      "techs": ["VueJx", "Laravel", "Php", "PostegreSql", "Eloquent"]
+    },
+    {
+      "id": 3,
+      "title": "MagoEat Backend",
+      "description": "THis is the backend project built with ExpressJs, Mongodb and Mongoose as the ORM. This app makes the frontend Mobile App dynamic and connects it to the datanase",
+      "live_link": "#",
+      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617231055/successGetListEnquete_qc06xm.png",
+      "github_link": "https://github.com/pacyL2K19/magoEat-BackendV1",
+      "techs": [
+        "Javascript",
+        "NodeJs",
+        "ExpressJs",
+        "MongoDB",
+        "Joi validation"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "e-CREDDHO",
+      "description": "A Humanitarian Research Center mobile application for collecting data and chat feature with administrators and other users",
+      "live_link": "#",
+      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617841563/login_plvs94.jpg",
+      "github_link": "https://github.com/nkpremices/ms-creddho-mobile",
+      "techs": ["React N", "Javascript", "Jsx"]
+    },
+    {
+      "id": 6,
+      "title": "MagoEat Presentation",
+      "description": "A single page web site where users can find links to directly download MagoEat applications for both Android and iOS",
+      "live_link": "https://pacyl2k19.github.io/magoeat-single-page-presentation/",
+      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617842102/dashmafgoeat_j2jltb.png",
+      "github_link": "https://github.com/pacyL2K19/magoeat-single-page-presentation",
+      "techs": ["React", "Jsx", "AOS"]
+    },
+    {
+      "id": 7,
+      "title": "MagoEat Dashboard",
+      "description": "The Dashboard of administrators of MagoEat Applicationm, that allows administrators to add Restaurant, accept orders, assign delivers, ...",
+      "live_link": "https://pacyl2k19.github.io/magoeat-single-page-presentation/",
+      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617842527/dashboard_hm063i.png",
+      "github_link": "https://github.com/pacyL2K19/magoeat-dashboard",
+      "techs": ["React", "Jsx", "AOS"]
+    }
+  ]
 }

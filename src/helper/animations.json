@@ -1,45 +1,43 @@
 {
-    "home": {
-        "introduction-text": "fade-down",
-        "title-text": "fade-left",
-        "description-text": "fade-right",
-        "image": "zoom-in-up",
-        "icons": "",
-        "duration-title": "850",
-        "duration-intro": "700",
-        "duration-description": "1100"
+  "home": {
+    "introduction-text": "fade-down",
+    "title-text": "fade-left",
+    "description-text": "fade-right",
+    "image": "zoom-in-up",
+    "icons": "",
+    "duration-title": "850",
+    "duration-intro": "700",
+    "duration-description": "1100"
+  },
+  "projects": {
+    "main-project": {
+      "image": "zoom-in",
+      "description-bloc": "zoom-in",
+      "duration": "700"
     },
     "projects": {
-        "main-project": {
-            "image": "zoom-in",
-            "description-bloc": "zoom-in",
-            "duration": "700"
-        },
-        "projects": {
-            "project-box": "zoom-in-up",
-            "skills-box": "fade-down",
-            "duration": "700"
-        },
-        "duration": ""
+      "project-box": "zoom-in-up",
+      "skills-box": "fade-down",
+      "duration": "700"
     },
-    "about": {
-        "description": "zoom-in",
-        "image": "zoom-in-up",
-        "image-duration": "1100",
-        "description-duration": "700",
-        "languages": {
-            "name": "flip-right",
-            "duration": "1000"
-        },
-        "frameworks": {
-            "name": "zoom-in"
-        },
-        "tools": {
-            "name": "flip-left",
-            "duration": "1000"
-        }
+    "duration": ""
+  },
+  "about": {
+    "description": "zoom-in",
+    "image": "zoom-in-up",
+    "image-duration": "1100",
+    "description-duration": "700",
+    "languages": {
+      "name": "flip-right",
+      "duration": "1000"
     },
-    "contacts": {
-
+    "frameworks": {
+      "name": "zoom-in"
+    },
+    "tools": {
+      "name": "flip-left",
+      "duration": "1000"
     }
+  },
+  "contacts": {}
 }
