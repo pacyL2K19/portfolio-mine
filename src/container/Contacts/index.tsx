@@ -18,10 +18,10 @@ const Contacts: React.FC = () => {
     <Box id="contacts">
       <Container fluid>
         <Row className="d-flex align-items-center justify-content-center">
-          <Col lg={"4"} className="px-5">
+          <Col lg={"4"} className="px-3 px-md-5">
             <Text>{data.intro}</Text>
           </Col>
-          <Col lg={"8"} className="px-5">
+          <Col lg={"8"} className="px-3 px-md-5">
             <Row>
               <Col lg={"6"}>
                 <TextField
