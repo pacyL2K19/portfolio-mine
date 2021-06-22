@@ -31,15 +31,15 @@ const MainProject: React.FC = () => {
             <Row>
               <Col lg={"12"}>
                 <p
-                  className="h1 my-3 my-md-0"
+                  className="h1 my-2 my-md-0"
                   style={{ color: theme.colors?.main }}
                 >
                   {projects.projects[0].title}
                 </p>
                 <div
+                  className="my-4"
                   style={{
                     height: 1,
-                    margin: "50px 0",
                     backgroundColor: theme.colors?.activeBtn,
                     width: "100%",
                   }}
