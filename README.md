@@ -1,12 +1,16 @@
 # Portfolio Template for Devs
 
-<!-- <p align="center">
+<p align="center">
 <a href="https://linkedin.com/in/pacifique-linjanja/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-pacifiquelinjanja-blue?style=flat-square&logo=linkedin"></a>
 <a href="https://www.instagram.com/linjanjapacifique/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-linjanjapacifique__-blue?style=flat-square&logo=instagram"></a>
 <a href="mailto:pacilinja2@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-pacilinja2@gmail.com-blue?style=flat-square&logo=Microsoft%20outlook"></a>
-</p> -->
+</p>
 
+<<<<<<< HEAD
 > This is a Template based project with the AIM to help developer to crate professional template for free and in a time records without dealing with deep codes
+=======
+> This is a Template project with the  aim to help developer to crate professional template for free and in a time records without dealing with deep codes
+>>>>>>> develop
 
 ## Description
 
@@ -60,6 +64,7 @@ At this point you should be able to get a the project running in the default web
 
 ## Customization
 
+<<<<<<< HEAD
 1. Favicon : Feel free to change the actual `favicon.ico` file
 2. Update the content :
    > - In the `helper/` folder, change couple of word by yours
@@ -70,6 +75,17 @@ At this point you should be able to get a the project running in the default web
    >   > - Add **`live links`** (if available) and `Github links` if not availbale, just put the default one `#`
    >   > - In globlal, this is the schema of each project: :down
 
+=======
+1. Favicon : Feel free to change the actual `favicon.ico` file 
+2. Update the content : 
+> - In the `helper/` folder, change couple of word by yours
+> > - **`header.json`**: the content of the header section, feel free to change the name and the description 
+> > - In the same file, you can change the items of the navbar, the way they are named for example from `Portfolio` to `Home`
+> - In the **`projects.json`** file : Customize the list of featured projects 
+> > * Images are url links, feel free to use any platform of choice to store them, for my case I used [Cloudinary](https://cloudinary.com/) but Goole Drive or any cloud plateform can be used
+> > * Add **`live links`** (if available) and `Github links` if not availbale, just put the default one `#` 
+> > * In globlal, this is the schema of each project: :down
+>>>>>>> develop
 ```
 // src/types.d.ts
 
@@ -83,9 +99,14 @@ type Project = {
 }
 
 ```
+<<<<<<< HEAD
 
 :warning Some of them are required, make sure all the projects contains required fields or you face errors on the running 3. In the **`social.json`** file: An array of `Social` object following this schema below, fell free to put a number of social media you want in the actual array
 
+=======
+⚠️ Some of them are required, make sure all the projects contains required fields or you face errors on the running
+3. In the **`social.json`** file: An array of `Social` object following this schema below, fell free to put a number of social media you want in the actual array
+>>>>>>> develop
 ```
 // src/types.d.ts
 
