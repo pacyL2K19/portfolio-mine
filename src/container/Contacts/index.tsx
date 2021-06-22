@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { Text, Box } from "./styled";
+import emailjs from "emailjs-com";
+import secrets from "../../secrets";
 import data from "../../helper/contacts.json";
 import social from "../../helper/social.json";
 import TextField from "@material-ui/core/TextField";
@@ -12,7 +14,13 @@ const Contacts: React.FC = () => {
   const [message, setMessage] = useState(data.sample);
   const [email, setEmail] = useState("");
   const handleSubmit = () => {
-    console.log("ok");
+    // e.preventDefault();
+    console.log("Sending");
+    emailjs.send(secrets.SERVICE_ID, secrets.TEMPLATE_ID, {
+      to_name: "plic",
+      from_name: "test",
+      message: "test",
+    });
   };
   return (
     <Box id="contacts">
@@ -65,7 +73,7 @@ const Contacts: React.FC = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <a onClick={() => handleSubmit}>
+            <a onClick={handleSubmit}>
               <Button title={data["button-title"]} />
             </a>
           </Col>
