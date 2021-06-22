@@ -38,6 +38,12 @@ interface Theme {
   colors?: Colors;
 }
 
+type Notice = {
+  type: "ERROR" | "SUCCESS";
+  content: string;
+  visible?: boolean;
+};
+
 type Nav = {
   items: string[];
 };
