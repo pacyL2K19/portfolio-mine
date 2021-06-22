@@ -77,7 +77,7 @@ const Contacts: React.FC = () => {
   };
   return (
     <Box id="contacts">
-      <Notice visible={visible} content={notice.content} type={notice.type} />
+      <Notice visible={true} content="Test notice I beg" type={notice.type} />
       <Container fluid>
         <Row className="d-flex align-items-center justify-content-center">
           <Col lg={"4"} className="px-3 px-md-5">

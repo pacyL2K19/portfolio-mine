@@ -7,6 +7,7 @@ export const Text = styled.h2`
 `;
 
 export const Box = styled.div`
+  position: relative;
   padding: 100px 5% 30px 5%;
   background-color: white;
 `;

@@ -4,11 +4,12 @@ const Notice: React.FC<Notice> = (props: Notice) => {
   return (
     <>
       <div
-        className={props.visible ? "p-4" : "d-none"}
+        className={props.visible ? "p-3" : "d-none"}
         style={{
+          zIndex: 2,
           position: "absolute",
-          bottom: 100,
-          right: 50,
+          bottom: 250,
+          right: 100,
           backgroundColor:
             props.type === "SUCCESS"
               ? "rgba(152, 250, 180, 0.5)"
