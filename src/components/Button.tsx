@@ -13,7 +13,7 @@ const Button: React.FC<Props> = (props: Props) => {
           className={props.icon}
           style={{ display: props.icon ? "block" : "none" }}
         ></i>
-        <p style={{ textAlign: "center", margin: 0, fontSize: 20 }}>
+        <p style={{ textAlign: "center", margin: 0, fontSize: 18 }}>
           {props.title}
         </p>
       </ButtonBox>

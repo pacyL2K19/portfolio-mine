@@ -39,7 +39,7 @@
       "title": "Books Helper",
       "description": "A twitter-like web application to suggest books and impression on them between friends",
       "live_link": "https://limitless-reef-60126.herokuapp.com/",
-      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617841563/login_plvs94.jpg",
+      "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1624375572/rorProject_kimlxv.png",
       "github_link": "https://github.com/pacyL2K19/books-helper",
       "techs": ["RoR", "Ruby", "Rspec"]
     }

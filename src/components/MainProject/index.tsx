@@ -70,6 +70,7 @@ const MainProject: React.FC = () => {
               </Col>
               <Col xs={"7"} sm={"6"}>
                 <a
+                  style={{textDecoration: "none"}}
                   href={projects.projects[0].github_link}
                   target="_blank"
                   rel="noreferrer"
