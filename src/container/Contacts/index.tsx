@@ -23,12 +23,12 @@ const Contacts: React.FC = () => {
   const resetForm = () => {
     setFIrstName("");
     setLastName("");
-    setMessage("");
+    setMessage("Hello Pacifique ...");
     setEmail("");
     setIsLoading(false);
     setTimeout(() => {
       setVisible(false);
-    }, 1000);
+    }, 2000);
   };
   const handleSubmit = () => {
     setIsLoading(true);
@@ -58,26 +58,32 @@ const Contacts: React.FC = () => {
           setVisible(true);
           setNotice({
             content:
-              "Thank you for your insterrest, I will be back to you in the next few minutes",
-            type: "SUCCESS",
+              "An error occured, please try again later",
+            type: "ERROR",
             visible,
           });
+          setTimeout(() => {
+            setVisible(false);
+          }, 2000);
           setIsLoading(false);
         });
     } else {
       setVisible(true);
       setNotice({
         content:
-          "Thank you for your insterrest, I will be back to you in the next few minutes",
-        type: "SUCCESS",
+          "Kindly put at leat your first name and your email address",
+        type: "ERROR",
         visible,
       });
+      setTimeout(() => {
+        setVisible(false);
+      }, 2000);
       setIsLoading(false);
     }
   };
   return (
     <Box id="contacts">
-      <Notice visible={true} content="Test notice I beg" type={notice.type} />
+      <Notice visible={visible} content={notice.content} type={notice.type} />
       <Container fluid>
         <Row className="d-flex align-items-center justify-content-center">
           <Col lg={"4"} className="px-3 px-md-5">
@@ -91,7 +97,7 @@ const Contacts: React.FC = () => {
                   style={{ margin: "15px 0" }}
                   id="first-name"
                   name="firstName"
-                  label="First Name"
+                  label="First Name *"
                   value={firstName}
                   onChange={(e) => setFIrstName(e.target.value)}
                 />
@@ -113,7 +119,7 @@ const Contacts: React.FC = () => {
               fullWidth
               id="email"
               name="email"
-              label="Email"
+              label="Email *"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
