@@ -16,11 +16,19 @@ const Contacts: React.FC = () => {
   const handleSubmit = () => {
     // e.preventDefault();
     console.log("Sending");
-    emailjs.send(secrets.SERVICE_ID, secrets.TEMPLATE_ID, {
-      to_name: "plic",
-      from_name: "test",
-      message: "test",
-    });
+    emailjs
+      .sendForm(
+        secrets.SERVICE_ID,
+        secrets.TEMPLATE_ID,
+        "Me or me",
+        secrets.USER_ID
+      )
+      .then(() => {
+        console.log("sent successfully");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <Box id="contacts">
