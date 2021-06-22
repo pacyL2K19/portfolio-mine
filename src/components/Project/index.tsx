@@ -17,7 +17,7 @@ const Project: React.FC<Props> = (props: Props) => {
         borderStyle: "solid",
       }}
     >
-      <a href={props.project.github_link} style={{textDecoration: "none"}}>
+      <a href={props.project.github_link} style={{ textDecoration: "none" }}>
         <ProjectBox
           key={props.project.id}
           style={{
