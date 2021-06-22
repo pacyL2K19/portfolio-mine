@@ -13,13 +13,17 @@ const Contacts: React.FC = () => {
   const [lastName, setLastName] = useState("");
   const [message, setMessage] = useState(data.sample);
   const [email, setEmail] = useState("");
-  const handleSubmit = (e: any) => {
+  const handleSubmit = () => {
     console.log("Sending");
     emailjs
-      .sendForm(
+      .send(
         secrets.SERVICE_ID,
         secrets.TEMPLATE_ID,
-        e.target,
+        {
+          to_name: "Me",
+          from_name: firstName + " " + lastName,
+          message: message,
+        },
         secrets.USER_ID
       )
       .then(() => {
@@ -36,65 +40,54 @@ const Contacts: React.FC = () => {
           <Col lg={"4"} className="px-3 px-md-5">
             <Text>{data.intro}</Text>
           </Col>
-          <form>
-            <Col lg={"8"} className="px-3 px-md-5">
-              <Row>
-                <Col lg={"6"}>
-                  <TextField
-                    fullWidth
-                    style={{ margin: "15px 0" }}
-                    id="first-name"
-                    name="firstName"
-                    label="First Name"
-                    value={firstName}
-                    onChange={(e) => setFIrstName(e.target.value)}
-                  />
-                </Col>
-                <Col lg={"6"}>
-                  <TextField
-                    style={{ margin: "15px 0" }}
-                    fullWidth
-                    id="last-name"
-                    name="lasttName"
-                    label="Last Name"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                  />
-                </Col>
-              </Row>
-              <TextField
-                style={{ margin: "15px 0" }}
-                fullWidth
-                id="email"
-                name="email"
-                label="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <TextField
-                fullWidth
-                style={{ margin: "15px 0" }}
-                id="message"
-                name="message"
-                label="Message"
-                multiline
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-              <a onClick={handleSubmit}>
-                <Button title={data["button-title"]} />
-              </a>
-            </Col>
-            <button
-              type="submit"
-              onClick={(e) => {
-                e.preventDefault();
-                handleSubmit(e);
-              }}
-            >
-              Send
-            </button>
-          </form>
+          <Col lg={"8"} className="px-3 px-md-5">
+            <Row>
+              <Col lg={"6"}>
+                <TextField
+                  fullWidth
+                  style={{ margin: "15px 0" }}
+                  id="first-name"
+                  name="firstName"
+                  label="First Name"
+                  value={firstName}
+                  onChange={(e) => setFIrstName(e.target.value)}
+                />
+              </Col>
+              <Col lg={"6"}>
+                <TextField
+                  style={{ margin: "15px 0" }}
+                  fullWidth
+                  id="last-name"
+                  name="lasttName"
+                  label="Last Name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+              </Col>
+            </Row>
+            <TextField
+              style={{ margin: "15px 0" }}
+              fullWidth
+              id="email"
+              name="email"
+              label="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <TextField
+              fullWidth
+              style={{ margin: "15px 0" }}
+              id="message"
+              name="message"
+              label="Message"
+              multiline
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <a onClick={handleSubmit}>
+              <Button title={data["button-title"]} />
+            </a>
+          </Col>
         </Row>
         <div
           style={{
