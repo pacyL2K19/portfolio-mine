@@ -10,28 +10,46 @@ import Button from "../../components/Button";
 
 const Contacts: React.FC = () => {
   const [firstName, setFIrstName] = useState("");
+  const [notice, setNotice] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const [lastName, setLastName] = useState("");
   const [message, setMessage] = useState(data.sample);
   const [email, setEmail] = useState("");
+  const resetForm = () => {
+    setFIrstName("");
+    setLastName("");
+    setMessage("");
+    setEmail("");
+    setIsLoading(false);
+  };
   const handleSubmit = () => {
-    console.log("Sending");
-    emailjs
-      .send(
-        secrets.SERVICE_ID,
-        secrets.TEMPLATE_ID,
-        {
-          to_name: "Me",
-          from_name: firstName + " " + lastName,
-          message: message,
-        },
-        secrets.USER_ID
-      )
-      .then(() => {
-        console.log("sent successfully");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setIsLoading(true);
+    if (firstName.trim() !== "" && email.trim() !== "") {
+      emailjs
+        .send(
+          secrets.SERVICE_ID,
+          secrets.TEMPLATE_ID,
+          {
+            to_name: "Me",
+            from_name: firstName + " " + lastName,
+            message: message,
+          },
+          secrets.USER_ID
+        )
+        .then(() => {
+          setNotice(
+            "Thank you for your insterrest, I will be back to you in the next few minutes"
+          );
+          resetForm();
+        })
+        .catch(() => {
+          setNotice("An error occured, please try again later");
+          setIsLoading(false);
+        });
+    } else {
+      setNotice("Kindly put at least the First name and the email address");
+      setIsLoading(false);
+    }
   };
   return (
     <Box id="contacts">
@@ -85,7 +103,9 @@ const Contacts: React.FC = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
             <a onClick={handleSubmit}>
-              <Button title={data["button-title"]} />
+              <Button
+                title={isLoading ? "Sending ..." : data["button-title"]}
+              />
             </a>
           </Col>
         </Row>
