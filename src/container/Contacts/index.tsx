@@ -7,10 +7,15 @@ import data from "../../helper/contacts.json";
 import social from "../../helper/social.json";
 import TextField from "@material-ui/core/TextField";
 import Button from "../../components/Button";
+import Notice from "../../components/Notice";
 
 const Contacts: React.FC = () => {
   const [firstName, setFIrstName] = useState("");
-  const [notice, setNotice] = useState("");
+  const [notice, setNotice] = useState<Notice>({
+    content: "",
+    type: "SUCCESS",
+  });
+  const [visible, setVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [lastName, setLastName] = useState("");
   const [message, setMessage] = useState(data.sample);
@@ -21,6 +26,9 @@ const Contacts: React.FC = () => {
     setMessage("");
     setEmail("");
     setIsLoading(false);
+    setTimeout(() => {
+      setVisible(false);
+    }, 1000);
   };
   const handleSubmit = () => {
     setIsLoading(true);
@@ -37,22 +45,39 @@ const Contacts: React.FC = () => {
           secrets.USER_ID
         )
         .then(() => {
-          setNotice(
-            "Thank you for your insterrest, I will be back to you in the next few minutes"
-          );
+          setVisible(true);
+          setNotice({
+            content:
+              "Thank you for your insterrest, I will be back to you in the next few minutes",
+            type: "SUCCESS",
+            visible,
+          });
           resetForm();
         })
         .catch(() => {
-          setNotice("An error occured, please try again later");
+          setVisible(true);
+          setNotice({
+            content:
+              "Thank you for your insterrest, I will be back to you in the next few minutes",
+            type: "SUCCESS",
+            visible,
+          });
           setIsLoading(false);
         });
     } else {
-      setNotice("Kindly put at least the First name and the email address");
+      setVisible(true);
+      setNotice({
+        content:
+          "Thank you for your insterrest, I will be back to you in the next few minutes",
+        type: "SUCCESS",
+        visible,
+      });
       setIsLoading(false);
     }
   };
   return (
     <Box id="contacts">
+      <Notice visible={visible} content={notice.content} type={notice.type} />
       <Container fluid>
         <Row className="d-flex align-items-center justify-content-center">
           <Col lg={"4"} className="px-3 px-md-5">
