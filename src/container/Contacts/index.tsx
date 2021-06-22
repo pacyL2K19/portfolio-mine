@@ -1,27 +1,95 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { Text, Box } from "./styled";
+import emailjs from "emailjs-com";
+import secrets from "../../secrets";
 import data from "../../helper/contacts.json";
 import social from "../../helper/social.json";
 import TextField from "@material-ui/core/TextField";
 import Button from "../../components/Button";
+import Notice from "../../components/Notice";
 
 const Contacts: React.FC = () => {
   const [firstName, setFIrstName] = useState("");
+  const [notice, setNotice] = useState<Notice>({
+    content: "",
+    type: "SUCCESS",
+  });
+  const [visible, setVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [lastName, setLastName] = useState("");
   const [message, setMessage] = useState(data.sample);
   const [email, setEmail] = useState("");
+  const resetForm = () => {
+    setFIrstName("");
+    setLastName("");
+    setMessage("Hello Pacifique ...");
+    setEmail("");
+    setIsLoading(false);
+    setTimeout(() => {
+      setVisible(false);
+    }, 2000);
+  };
   const handleSubmit = () => {
-    console.log("ok");
+    setIsLoading(true);
+    if (firstName.trim() !== "" && email.trim() !== "") {
+      emailjs
+        .send(
+          secrets.SERVICE_ID,
+          secrets.TEMPLATE_ID,
+          {
+            to_name: "Me",
+            from_name: firstName + " " + lastName,
+            message: message,
+          },
+          secrets.USER_ID
+        )
+        .then(() => {
+          setVisible(true);
+          setNotice({
+            content:
+              "Thank you for your insterrest, I will be back to you in the next few minutes",
+            type: "SUCCESS",
+            visible,
+          });
+          resetForm();
+        })
+        .catch(() => {
+          setVisible(true);
+          setNotice({
+            content:
+              "An error occured, please try again later",
+            type: "ERROR",
+            visible,
+          });
+          setTimeout(() => {
+            setVisible(false);
+          }, 2000);
+          setIsLoading(false);
+        });
+    } else {
+      setVisible(true);
+      setNotice({
+        content:
+          "Kindly put at leat your first name and your email address",
+        type: "ERROR",
+        visible,
+      });
+      setTimeout(() => {
+        setVisible(false);
+      }, 2000);
+      setIsLoading(false);
+    }
   };
   return (
     <Box id="contacts">
+      <Notice visible={visible} content={notice.content} type={notice.type} />
       <Container fluid>
         <Row className="d-flex align-items-center justify-content-center">
-          <Col lg={"4"} className="px-5">
+          <Col lg={"4"} className="px-3 px-md-5">
             <Text>{data.intro}</Text>
           </Col>
-          <Col lg={"8"} className="px-5">
+          <Col lg={"8"} className="px-3 px-md-5">
             <Row>
               <Col lg={"6"}>
                 <TextField
@@ -29,7 +97,7 @@ const Contacts: React.FC = () => {
                   style={{ margin: "15px 0" }}
                   id="first-name"
                   name="firstName"
-                  label="First Name"
+                  label="First Name *"
                   value={firstName}
                   onChange={(e) => setFIrstName(e.target.value)}
                 />
@@ -51,7 +119,7 @@ const Contacts: React.FC = () => {
               fullWidth
               id="email"
               name="email"
-              label="Email"
+              label="Email *"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -65,8 +133,10 @@ const Contacts: React.FC = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <a onClick={() => handleSubmit}>
-              <Button title={data["button-title"]} />
+            <a onClick={handleSubmit}>
+              <Button
+                title={isLoading ? "Sending ..." : data["button-title"]}
+              />
             </a>
           </Col>
         </Row>
