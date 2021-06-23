@@ -22,7 +22,7 @@
     {
       "id": 3,
       "title": "MagoEat Backend",
-      "description": "THis is the backend project built with ExpressJs, Mongodb and Mongoose as the ORM. This app makes the frontend Mobile App dynamic and connects it to the datanase",
+      "description": "This is the backend project built with ExpressJs, Mongodb and Mongoose as the ORM. This app makes the frontend Mobile App dynamic and connects it to the database",
       "live_link": "#",
       "imgUrl": "https://res.cloudinary.com/pacyl20/image/upload/v1617231055/successGetListEnquete_qc06xm.png",
       "github_link": "https://github.com/pacyL2K19/magoEat-BackendV1",
