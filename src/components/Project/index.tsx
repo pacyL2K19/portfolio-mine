@@ -12,9 +12,11 @@ const Project: React.FC<Props> = (props: Props) => {
     <div
       style={{
         padding: "20px 10px",
-        borderColor: theme.colors?.activeBtn,
-        borderWidth: 2,
-        borderStyle: "solid",
+        boxShadow: "0 0 10px gray",
+        borderRadius: 10
+        // borderColor: theme.colors?.activeBtn,
+        // borderWidth: 2,
+        // borderStyle: "solid",
       }}
     >
       <a
@@ -45,7 +47,7 @@ const Project: React.FC<Props> = (props: Props) => {
               backgroundImage:
                 "linear-gradient(to top, " +
                 theme.colors?.background +
-                " , rgba(250, 250, 250, 0.3))",
+                " , rgba(250, 250, 250, 0.5))",
               zIndex: 100,
             }}
           >
@@ -63,6 +65,7 @@ const Project: React.FC<Props> = (props: Props) => {
             </h3>
             <p
               style={{
+                // backgroundColor: "rgba(0, 0, 0, 0.5)",
                 color: "white",
                 fontSize: 18,
                 marginTop: 100,
