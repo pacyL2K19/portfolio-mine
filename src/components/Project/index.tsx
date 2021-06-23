@@ -12,11 +12,8 @@ const Project: React.FC<Props> = (props: Props) => {
     <div
       style={{
         padding: "20px 10px",
-        boxShadow: "0 0 10px gray",
+        boxShadow: "0 0 5px gray",
         borderRadius: 10
-        // borderColor: theme.colors?.activeBtn,
-        // borderWidth: 2,
-        // borderStyle: "solid",
       }}
     >
       <a
@@ -64,12 +61,14 @@ const Project: React.FC<Props> = (props: Props) => {
               {props.project.title}
             </h3>
             <p
+              className="mx-3"
               style={{
-                // backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                borderRadius: 15,
                 color: "white",
                 fontSize: 18,
                 marginTop: 100,
-                padding: 30,
+                padding: 20,
               }}
             >
               {props.project.description}
@@ -91,6 +90,7 @@ const Project: React.FC<Props> = (props: Props) => {
                         borderColor: theme.colors?.clickBtn,
                         borderWidth: 1,
                         borderStyle: "solid",
+                        borderRadius: 15,
                         padding: 3,
                       }}
                     >
