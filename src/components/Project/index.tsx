@@ -50,8 +50,8 @@ const Project: React.FC<Props> = (props: Props) => {
           >
             <h3
               style={{
-                backgroundColor: theme.colors?.activeBtn,
-                color: "white",
+                backgroundColor: theme.colors?.main,
+                color: theme.colors?.mainText,
                 textAlign: "center",
                 margin: "40px -20px 0 40px",
                 padding: 10,

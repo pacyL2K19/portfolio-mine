@@ -17,9 +17,9 @@ export const ProjectBox = styled.div`
 
     &:hover .button {
         display: block !important;
-        background-color: ${theme.colors?.activeBtn};
+        background-color: ${theme.colors?.main};
         width: 100%;
-        color: white;
+        color: ${theme.colors?.mainText};
         font-weight: bold;
         text-align: center;
         font-size: 22px
