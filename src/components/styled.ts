@@ -13,3 +13,17 @@ export const ButtonBox = styled.div`
   background-color: ${colors.main};
   justify-content: space-around;
 `;
+
+export const NoticeContainer = styled.div`
+  z-index: 2;
+  position: absolute;
+  bottom: 250px;
+  right: 100px;
+
+  // For mobile layouts
+
+  @media only screen and (max-width: 425px) {
+    bottom: 180px;
+    right: 0px;
+  }
+`;
