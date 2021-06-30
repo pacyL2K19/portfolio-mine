@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../core/theme/colors";
 
 export const ButtonBox = styled.div`
-  padding: 8px 18px;
+  padding: 10px 14px;
   margin-top: 50px;
   border-radius: 10px;
   color: ${colors.mainText};

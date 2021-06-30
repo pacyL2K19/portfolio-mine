@@ -59,7 +59,7 @@ const MainProject: React.FC = () => {
               <Col lg={"12"}>
                 <Skills SkillsItems={projects.projects[0].techs} />
               </Col>
-              <Col xs={"7"} sm={"6"}>
+              <Col xs={"6"} sm={"6"}>
                 <a
                   href={projects.projects[0].live_link}
                   target="_blank"
@@ -68,7 +68,7 @@ const MainProject: React.FC = () => {
                   <Button title="Live version" icon="fas fa-eye" />
                 </a>
               </Col>
-              <Col xs={"7"} sm={"6"}>
+              <Col xs={"6"} sm={"6"}>
                 <a
                   style={{textDecoration: "none"}}
                   href={projects.projects[0].github_link}
