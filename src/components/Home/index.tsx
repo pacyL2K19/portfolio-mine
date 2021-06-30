@@ -13,7 +13,7 @@ const Home: React.FC<Home> = (props: Home) => {
         <Grid item xl={1} md={12} lg={1} xs={12}>
           <Grid className="my-3" container>
             {social.social.map((i) => (
-              <Grid key={i.class} item xs={2} md={3} lg={12} xl={12}>
+              <Grid key={i.class} item xs={1} md={1} lg={12} xl={12} className="mr-3 mr-sm-0">
                 <a target="_blank" rel="noreferrer" href={i.link}>
                   <Icon className={i.class}></Icon>
                 </a>
