@@ -53,5 +53,6 @@ export const ProjectDescription = styled.p`
 
   @media only screen and (max-width: 425px) {
     margin-top: 50px;
+    font-size: 14px;
   }
 `;
