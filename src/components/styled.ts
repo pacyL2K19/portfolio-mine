@@ -11,6 +11,5 @@ export const ButtonBox = styled.div`
   font-weight: bold;
   align-items: center;
   background-color: ${colors.main};
-  box-shadow: 0 0 10px ${colors.mainText};
   justify-content: space-around;
 `;
