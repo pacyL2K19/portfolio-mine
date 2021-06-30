@@ -32,4 +32,11 @@ export const ProjectLabel = styled.h3`
   margin: 40px -20px 0 40px;
   padding: 10px;
   border-radius: 0 30px 30px 0;
+
+  // For mobile layouts
+
+  @media only screen and (max-width: 425px) {
+    margin: 20px -20px 0 20px;
+    font-size: 18px;
+  }
 `;

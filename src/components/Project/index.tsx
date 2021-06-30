@@ -1,7 +1,7 @@
 import React from "react";
 import { theme } from "../../core/theme";
 import { Container, Row, Col } from "react-bootstrap";
-import { ProjectBox } from "./styled";
+import { ProjectBox, ProjectLabel } from "./styled";
 import animations from "../../helper/animations.json";
 
 interface Props {
@@ -13,7 +13,7 @@ const Project: React.FC<Props> = (props: Props) => {
       style={{
         padding: "20px 10px",
         boxShadow: "0 0 5px gray",
-        borderRadius: 10
+        borderRadius: 10,
       }}
     >
       <a
@@ -48,18 +48,7 @@ const Project: React.FC<Props> = (props: Props) => {
               zIndex: 100,
             }}
           >
-            <h3
-              style={{
-                backgroundColor: theme.colors?.main,
-                color: theme.colors?.mainText,
-                textAlign: "center",
-                margin: "40px -20px 0 40px",
-                padding: 10,
-                borderRadius: "0 30px 30px 0",
-              }}
-            >
-              {props.project.title}
-            </h3>
+            <ProjectLabel>{props.project.title}</ProjectLabel>
             <p
               className="mx-3"
               style={{
