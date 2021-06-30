@@ -29,7 +29,7 @@ export const ProjectLabel = styled.h3`
   background-color: ${theme.colors?.main};
   color: ${theme.colors?.mainText};
   text-align: center;
-  margin: 40px -20px 0 40px;
+  margin: 20px -20px 0 20px;
   padding: 10px;
   border-radius: 0 30px 30px 0;
 
@@ -46,7 +46,7 @@ export const ProjectDescription = styled.p`
   border-radius: 5px;
   color: white;
   font-size: 18px;
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 20px;
   
   // For mobile layouts

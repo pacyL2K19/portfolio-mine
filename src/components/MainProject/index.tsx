@@ -13,7 +13,7 @@ const MainProject: React.FC = () => {
       <Container fluid className="d-flex align-items-center">
         <Row style={{ justifyContent: "space-around" }}>
           <Col
-            lg={7}
+            lg={6}
             data-aos={animations.projects["main-project"].image}
             data-aos-duration={animations.projects["main-project"].duration}
             data-aos-anchor-placement="center-bottom"
@@ -26,7 +26,8 @@ const MainProject: React.FC = () => {
             data-aos={animations.projects["main-project"]["description-bloc"]}
             data-aos-duration={animations.projects["main-project"].duration}
             data-aos-anchor-placement="center-bottom"
-            lg={4}
+            lg={6}
+            className="px-lg-3"
           >
             <Row>
               <Col lg={"12"}>
@@ -59,7 +60,7 @@ const MainProject: React.FC = () => {
               <Col lg={"12"}>
                 <Skills SkillsItems={projects.projects[0].techs} />
               </Col>
-              <Col xs={"6"} sm={"6"}>
+              <Col xs={"6"}>
                 <a
                   href={projects.projects[0].live_link}
                   target="_blank"
@@ -68,7 +69,7 @@ const MainProject: React.FC = () => {
                   <Button title="Live version" icon="fas fa-eye" />
                 </a>
               </Col>
-              <Col xs={"6"} sm={"6"}>
+              <Col xs={"6"}>
                 <a
                   style={{textDecoration: "none"}}
                   href={projects.projects[0].github_link}

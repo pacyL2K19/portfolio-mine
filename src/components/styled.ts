@@ -24,6 +24,6 @@ export const NoticeContainer = styled.div`
 
   @media only screen and (max-width: 425px) {
     bottom: 180px;
-    right: 0px;
+    right: 0;
   }
 `;
