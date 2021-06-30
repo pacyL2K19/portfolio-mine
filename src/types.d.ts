@@ -71,6 +71,7 @@ type Project = {
   techs?: string[];
   id: number;
   github_link?: string;
+  live_link?: string;
 };
 
 type Social = {
