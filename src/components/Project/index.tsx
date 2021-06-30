@@ -1,7 +1,7 @@
 import React from "react";
 import { theme } from "../../core/theme";
 import { Container, Row, Col } from "react-bootstrap";
-import { ProjectBox, ProjectLabel } from "./styled";
+import { ProjectBox, ProjectLabel, ProjectDescription } from "./styled";
 import animations from "../../helper/animations.json";
 
 interface Props {
@@ -49,19 +49,9 @@ const Project: React.FC<Props> = (props: Props) => {
             }}
           >
             <ProjectLabel>{props.project.title}</ProjectLabel>
-            <p
-              className="mx-3"
-              style={{
-                backgroundColor: "rgba(0, 0, 0, 0.7)",
-                borderRadius: 15,
-                color: "white",
-                fontSize: 18,
-                marginTop: 100,
-                padding: 20,
-              }}
-            >
+            <ProjectDescription className="mx-3">
               {props.project.description}
-            </p>
+            </ProjectDescription>
             <Container style={{ position: "absolute", bottom: 20 }}>
               <Row>
                 {props.project.techs?.slice(0, 3).map((skill) => (

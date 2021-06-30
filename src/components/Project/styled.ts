@@ -40,3 +40,18 @@ export const ProjectLabel = styled.h3`
     font-size: 18px;
   }
 `;
+
+export const ProjectDescription = styled.p`
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  margin-top: 100px;
+  padding: 20px;
+  
+  // For mobile layouts
+
+  @media only screen and (max-width: 425px) {
+    margin-top: 50px;
+  }
+`;
