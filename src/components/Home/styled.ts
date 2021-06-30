@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const Box = styled.section`
   padding: 170px 3%;
+
+  // For mobile layouts
+
+  @media only screen and (max-width: 425px) {
+    padding: 100px 3%;
+  }
 `;
 
 export const Icon = styled.i`

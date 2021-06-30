@@ -1,15 +1,12 @@
 import React from "react";
+import { NoticeContainer } from "./styled";
 
 const Notice: React.FC<Notice> = (props: Notice) => {
   return (
     <>
-      <div
+      <NoticeContainer
         className={props.visible ? "p-3" : "d-none"}
         style={{
-          zIndex: 2,
-          position: "absolute",
-          bottom: 250,
-          right: 100,
           backgroundColor:
             props.type === "SUCCESS"
               ? "rgba(152, 250, 180, 0.5)"
@@ -26,7 +23,7 @@ const Notice: React.FC<Notice> = (props: Notice) => {
         >
           {props.content}
         </p>
-      </div>
+      </NoticeContainer>
     </>
   );
 };
