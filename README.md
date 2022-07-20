@@ -6,13 +6,13 @@
 <a href="mailto:pacilinja2@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-pacilinja2@gmail.com-blue?style=flat-square&logo=Microsoft%20outlook"></a>
 </p>
 
-> This is a Template project with the  aim to help developer to crate professional template for free and in a time records without dealing with deep codes
+> This is a Template project with the  aim to help developer to create professional template for free and in a time records without dealing with deep codes
 
 ## Description
 
 ### Tech Stack
 
-This project is based in these main tech stacks :
+This project is based in these main tech stacks:
 
 - ReactJS - styled-components - data-aos
 - Typescript
